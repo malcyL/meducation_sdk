@@ -23,14 +23,15 @@ And then execute:
 Resources accept the following methods:
 
 ```ruby
-MediaFile.find(id)
-MediaFile.find_each #=> do ... end
-MediaFile.where(foo: 'bar') #=> do ... end
-MediaFile.create(foo: 'bar')
+MeducationAPI::MediaFile.find(id)
+MeducationAPI::MediaFile.find_each #=> do ... end
+MeducationAPI::MediaFile.where(foo: 'bar') #=> do ... end
+MeducationAPI::MediaFile.create(foo: 'bar')
 ```
 
 The following objects are currently supported:
-```
+
+```ruby
 MediaFile
 User
 ItemComment
