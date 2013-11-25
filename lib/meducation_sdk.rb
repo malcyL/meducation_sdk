@@ -8,7 +8,12 @@ require "meducation_sdk/mocker"
 RESOURCES = %w{
   item_comment
   media_file
+  mesh_heading
+  mnemonic
   notification
+  partner
+  premium_tutorial
+  syllabus_item
   user
 }
 RESOURCES.each do |resource|
