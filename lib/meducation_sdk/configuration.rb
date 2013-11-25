@@ -1,7 +1,7 @@
-module MeducationAPI
-  class MeducationAPIError < StandardError
+module MeducationSDK
+  class MeducationSDKError < StandardError
   end
-  class MeducationAPIConfigurationError < MeducationAPIError
+  class MeducationSDKConfigurationError < MeducationSDKError
   end
 
   class Configuration
@@ -29,7 +29,7 @@ module MeducationAPI
 
     def get_or_raise(setting)
       instance_variable_get("@#{setting.to_s}") ||
-        raise(MeducationAPIConfigurationError.new("Configuration for #{setting} is not set"))
+        raise(MeducationSDKConfigurationError.new("Configuration for #{setting} is not set"))
     end
   end
 end

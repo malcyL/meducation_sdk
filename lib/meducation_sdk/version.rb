@@ -1,3 +1,3 @@
-module MeducationApi
+module MeducationSDK
   VERSION = "0.0.1"
 end

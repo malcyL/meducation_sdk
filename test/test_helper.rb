@@ -7,18 +7,18 @@ require "mocha/setup"
 lib = File.expand_path('../../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require "meducation_api"
+require "meducation_sdk"
 
 class Minitest::Test
   def setup
-    MeducationAPI.config do |config|
+    MeducationSDK.config do |config|
       config.logger = mock()
       config.logger.stubs(:debug)
       config.logger.stubs(:info)
       config.logger.stubs(:error)
     end
     Loquor.config do |config|
-      config.logger = MeducationAPI.config.logger
+      config.logger = MeducationSDK.config.logger
       config.access_id = "Sermo"
       config.secret_key = "foobar"
       config.endpoint = "http://localhost:3000"

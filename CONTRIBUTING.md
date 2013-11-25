@@ -3,7 +3,7 @@
 First of all, **thank you** for contributing to this library!
 
 ## Issues
-Please file issues on the [GitHub issues list](https://github.com/meducation/meducation_api/issues) and give as much detail as possible.
+Please file issues on the [GitHub issues list](https://github.com/meducation/meducation_sdk/issues) and give as much detail as possible.
 
 ## Features / Pull Requests
 

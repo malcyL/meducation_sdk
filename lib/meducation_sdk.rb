@@ -1,12 +1,21 @@
 require 'active_support/all'
 require 'loquor'
 
-require "meducation_api/version"
-require "meducation_api/configuration"
+require "meducation_sdk/version"
+require "meducation_sdk/configuration"
+require "meducation_sdk/mocker"
 
-Dir[File.dirname(__FILE__) + '/meducation_api/resources/*.rb'].each {|file| require file }
+RESOURCES = %w{
+  item_comment
+  media_file
+  notification
+  user
+}
+RESOURCES.each do |resource|
+  require "meducation_sdk/resources/#{resource}"
+end
 
-module MeducationAPI
+module MeducationSDK
   def self.config
     @config ||= Configuration.new
     if block_given?
@@ -14,6 +23,10 @@ module MeducationAPI
     else
       @config
     end
+  end
+
+  def self.mock!
+    MeducationSDK::Mocker.mock!
   end
 end
 

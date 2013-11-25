@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'meducation_api/version'
+require 'meducation_sdk/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "meducation_api"
-  spec.version       = MeducationApi::VERSION
+  spec.name          = "meducation_sdk"
+  spec.version       = MeducationSDK::VERSION
   spec.authors       = ["Jeremy Walker"]
   spec.email         = ["jez.walker@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}
@@ -27,5 +27,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", '~> 5.0.8'
   spec.add_development_dependency "mocha"
   spec.add_development_dependency "rake"
-
 end

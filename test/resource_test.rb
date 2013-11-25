@@ -1,5 +1,5 @@
 require File.expand_path('../test_helper', __FILE__)
-module MeducationAPI
+module MeducationSDK
   class ResourceTest < Minitest::Test
     def self.test_resource(klass, url)
       define_method :klass do klass end

@@ -1,17 +1,17 @@
-# Meducation API
+# Meducation SDK
 
-[![Build Status](https://travis-ci.org/meducation/meducation_api.png)](https://travis-ci.org/meducation/meducation_api)
-[![Dependencies](https://gemnasium.com/meducation/meducation_api.png?travis)](https://gemnasium.com/meducation/meducation_api)
-[![Code Climate](https://codeclimate.com/github/meducation/meducation_api.png)](https://codeclimate.com/github/meducation/meducation_api)
+[![Build Status](https://travis-ci.org/meducation/meducation_sdk.png)](https://travis-ci.org/meducation/meducation_sdk)
+[![Dependencies](https://gemnasium.com/meducation/meducation_sdk.png?travis)](https://gemnasium.com/meducation/meducation_sdk)
+[![Code Climate](https://codeclimate.com/github/meducation/meducation_sdk.png)](https://codeclimate.com/github/meducation/meducation_sdk)
 
-A wrapper for Meducation's API.
+A wrapper for Meducation's SDK.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'meducation_api'
+gem 'meducation_sdk'
 ```
 
 And then execute:
@@ -23,10 +23,10 @@ And then execute:
 Resources accept the following methods:
 
 ```ruby
-MeducationAPI::MediaFile.find(id)
-MeducationAPI::MediaFile.find_each #=> do ... end
-MeducationAPI::MediaFile.where(foo: 'bar') #=> do ... end
-MeducationAPI::MediaFile.create(foo: 'bar')
+MeducationSDK::MediaFile.find(id)
+MeducationSDK::MediaFile.find_each #=> do ... end
+MeducationSDK::MediaFile.where(foo: 'bar') #=> do ... end
+MeducationSDK::MediaFile.create(foo: 'bar')
 ```
 
 The following objects are currently supported:
