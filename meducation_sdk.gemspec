@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MeducationSDK::VERSION
   spec.authors       = ["Jeremy Walker"]
   spec.email         = ["jez.walker@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Meducation's SDK"
+  spec.summary       = "The SDK for Meducation"
   spec.homepage      = ""
   spec.license       = "MIT"
 
