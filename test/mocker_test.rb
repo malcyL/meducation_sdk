@@ -26,7 +26,7 @@ module MeducationSDK
       MeducationSDK.mock!
 
       media_file = MediaFile.sample
-      media_file.title.should == "Abdominal Ultrasound Tutorial"
+      assert_equal media_file.title, "Abdominal Ultrasound Tutorial"
     ensure
       MeducationSDK::Mocker.unmock!
     end
