@@ -6,17 +6,25 @@ module MeducationSDK
 
   class Configuration
 
-    SETTINGS = [
-      :logger, :access_id, :secret_key, :endpoint
-    ]
+    SETTINGS = [ :logger ]
 
     attr_writer *SETTINGS
 
     def initialize
-      Filum.config do |config|
-        config.logfile = "./log/loquor.log"
+      Filum.config.logfile = "./log/loquor.log"
+      Loquor.config.endpoint = "http://www.meducation.net/system"
+      self.logger = Filum.logger
+    end
+
+    [:access_id, :secret_key, :endpoint].each do |setting|
+      define_method "#{setting}=" do |val|
+        Loquor.config.send("#{setting}=", val)
       end
-      logger = Filum.logger
+    end
+
+    def logger=(val)
+      @logger = val
+      Loquor.config.logger = val
     end
 
     SETTINGS.each do |setting|
