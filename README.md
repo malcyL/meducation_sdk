@@ -25,7 +25,8 @@ Resources accept the following methods:
 ```ruby
 MeducationSDK::MediaFile.find(id)
 MeducationSDK::MediaFile.find_each #=> do ... end
-MeducationSDK::MediaFile.where(foo: 'bar') #=> do ... end
+MeducationSDK::MediaFile.where(foo: 'bar') #=> []
+MeducationSDK::MediaFile.where(foo: 'bar').select([:id, :name]) #=> []
 MeducationSDK::MediaFile.create(foo: 'bar')
 ```
 
