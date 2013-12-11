@@ -1,3 +1,6 @@
+# 0.3.3 / 2013-12-11
+* [BUG FIX] Fixed mesh_heading path.
+
 # 0.3.2 / 2013-12-05
 * [FEATURE] Bumped version of loquor.
 
