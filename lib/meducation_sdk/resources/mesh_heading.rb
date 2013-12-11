@@ -1,6 +1,6 @@
 module MeducationSDK
   class MeshHeading < Loquor::Resource
-    self.path = "/partners"
+    self.path = "/mesh_headings"
 
     def parents
       MeshHeading.where(id: parent_ids)
