@@ -6,15 +6,30 @@ require "meducation_sdk/configuration"
 require "meducation_sdk/mocker"
 
 RESOURCES = %w{
+  community
+  community_membership
+  ecommerce_subscription
+  friendship
+  group
+  group_discussion
+  group_discussion_post
+  group_invite
+  group_membership
   item_comment
+  knowledge_bank_question
+  knowledge_bank_answer
   media_file
   mesh_heading
+  message
+  message_thread
+  message_thread_contributor
   mnemonic
   notification
   partner
   premium_tutorial
   syllabus_item
   user
+  user_settings
 }
 RESOURCES.each do |resource|
   require "meducation_sdk/resources/#{resource}"

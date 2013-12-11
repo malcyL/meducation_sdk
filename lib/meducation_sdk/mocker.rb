@@ -42,15 +42,15 @@ module MeducationSDK
 
     private
     def resource_klass
-      @resource_name.classify
+      @resource_name.camelize
     end
 
     def mock_klass
-       "#{@resource_name}_mock".classify
+       "#{@resource_name}_mock".camelize
     end
 
     def original_klass
-      "#{@resource_name}_original".classify
+      "#{@resource_name}_original".camelize
     end
   end
 end
