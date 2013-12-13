@@ -5,6 +5,10 @@ module MeducationSDK
     def item
       @item ||= "MeducationSDK::#{item_type}".constantize.find(item_id)
     end
+
+    def user
+      @user ||= User.find(user_id)
+    end
   end
 
   class ItemCommentMock < ItemComment
