@@ -1,3 +1,7 @@
+# 0.3.4 / 2013-12-13
+* [FEATURE] Upgrade to latest loquor to support caching
+* [BUG FIX] Fixed loading of mesh_heading parents.
+
 # 0.3.3 / 2013-12-11
 * [BUG FIX] Fixed mesh_heading path.
 

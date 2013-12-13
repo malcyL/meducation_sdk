@@ -3,7 +3,11 @@ module MeducationSDK
     self.path = "/mesh_headings"
 
     def parents
-      MeshHeading.where(id: parent_ids)
+      parent_ids.map { |p_id| MeshHeading.find(p_id) }
+    end
+    
+    def parent_ids  
+      @data[:parents].map { |p| p['id'] }
     end
   end
 
