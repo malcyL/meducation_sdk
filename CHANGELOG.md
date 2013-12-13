@@ -1,3 +1,6 @@
+# 0.4.1 / 2013-12-13
+* [BUG FIX] Fixed mnemonic path.
+
 # 0.4.0 / 2013-12-13
 * [FEATURE] Add lots more resources.
 * [FEATURE] Support pluralisd resources.
