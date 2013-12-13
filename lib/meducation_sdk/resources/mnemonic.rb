@@ -1,6 +1,6 @@
 module MeducationSDK
   class Mnemonic < Loquor::Resource
-    self.path = "/partners"
+    self.path = "/mnemonics"
   end
 
   class MnemonicMock < Mnemonic
