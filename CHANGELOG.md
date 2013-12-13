@@ -1,5 +1,9 @@
+# 0.4.0 / 2013-12-13
+* [FEATURE] Add lots more resources.
+* [FEATURE] Support pluralisd resources.
+
 # 0.3.4 / 2013-12-13
-* [FEATURE] Upgrade to latest loquor to support caching
+* [FEATURE] Upgrade to latest loquor to support caching.
 * [BUG FIX] Fixed loading of mesh_heading parents.
 
 # 0.3.3 / 2013-12-11
