@@ -26,9 +26,21 @@ module MeducationSDK
     end
 
     def test_access_id_proxies_to_loquor
-      access_id = "test-access-key"
+      access_id = "test-access-id"
       MeducationSDK.config.access_id = access_id
       assert_equal access_id, Loquor.config.access_id
+    end
+
+    def test_secret_key_proxies_to_loquor
+      key = "test-secret-key"
+      MeducationSDK.config.secret_key = key
+      assert_equal key, Loquor.config.secret_key
+    end
+
+    def test_cache_proxies_to_loquor
+      cache = mock()
+      MeducationSDK.config.cache = cache
+      assert_equal cache, Loquor.config.cache
     end
   end
 end

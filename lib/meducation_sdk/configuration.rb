@@ -16,7 +16,7 @@ module MeducationSDK
       self.logger = Filum.logger
     end
 
-    [:access_id, :secret_key, :endpoint].each do |setting|
+    [:access_id, :secret_key, :endpoint, :cache].each do |setting|
       define_method "#{setting}=" do |val|
         Loquor.config.send("#{setting}=", val)
       end
