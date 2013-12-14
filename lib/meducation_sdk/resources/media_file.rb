@@ -37,7 +37,8 @@ module MeducationSDK
       id: 1,
       user_id: 1,
       media_type_id: 2,
-      title: "Abdominal Ultrasound Tutorial"
+      title: "Abdominal Ultrasound Tutorial",
+      preview_image_url: "http://www.example.com/1.jpg"
     }
   end
 end

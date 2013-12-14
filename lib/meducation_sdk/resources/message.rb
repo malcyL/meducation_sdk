@@ -17,7 +17,8 @@ module MeducationSDK
     self.attributes = {
       id: 1,
       thread_id: 20,
-      from_id: 10
+      from_id: 10,
+      parsed_content: "Foobar123"
     }
   end
 end

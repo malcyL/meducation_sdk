@@ -20,9 +20,13 @@ module MeducationSDK
 
     self.attributes = {
       id: 1,
+      first_name: "Jeremy",
+      surname: "Walker",
       name: "Jeremy Walker",
       photo_url: "http://i.telegraph.co.uk/multimedia/archive/02351/cross-eyed-cat_2351472k.jpg",
-      primary_email_address: "jez.walker@gmail.com"
+      primary_email_address: "jez.walker@gmail.com",
+      url_code: "asd1234567",
+      is_site_admin: false
     }
   end
 end
