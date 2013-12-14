@@ -24,7 +24,8 @@ module MeducationSDK
       user_id: 8,
       invited_by_id: 12,
       message: "",
-      email: ""
+      email: "",
+      accept_code: "123asdqwe"
     }
   end
 end

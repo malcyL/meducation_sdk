@@ -17,7 +17,8 @@ module MeducationSDK
     self.attributes = {
       id: 1,
       user_id: 3,
-      discussion_id: 8
+      discussion_id: 8,
+      parsed_content: "The content of my post"
     }
   end
 end

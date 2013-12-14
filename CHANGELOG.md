@@ -1,3 +1,6 @@
+# 0.5.0 / 2013-12-14
+* [FEATURE] Improve sample attributes.
+
 # 0.4.1 / 2013-12-13
 * [BUG FIX] Fixed mnemonic path.
 

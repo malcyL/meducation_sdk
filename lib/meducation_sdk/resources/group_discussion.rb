@@ -21,7 +21,8 @@ module MeducationSDK
     self.attributes = {
       id: 1,
       group_id: 8,
-      started_by: 7
+      started_by_id: 7,
+      title: "My great discussion"
     }
   end
 end

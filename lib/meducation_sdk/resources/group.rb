@@ -12,9 +12,11 @@ module MeducationSDK
 
     self.attributes = {
       id: 1,
+      name: "A great group",
+      description: "Some description of a group",
       created_by_id: 23,
-      title: "My first group",
-      image_url: "http://i.telegraph.co.uk/multimedia/archive/02351/cross-eyed-cat_2351472k.jpg"
+      image_url: "http://i.telegraph.co.uk/multimedia/archive/02351/cross-eyed-cat_2351472k.jpg",
+      url: "my_url"
     }
   end
 end

@@ -17,7 +17,8 @@ module MeducationSDK
     self.attributes = {
       id: 1,
       user_id: 8,
-      friend_id: 9
+      friend_id: 9,
+      accept_code: "asdsad21312e"
     }
   end
 end

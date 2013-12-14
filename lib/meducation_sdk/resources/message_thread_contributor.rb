@@ -7,7 +7,10 @@ module MeducationSDK
     extend Loquor::ResourceMock
 
     self.attributes = {
-      id: 1
+      id: 1,
+      thread_id: 10,
+      user_id: 20,
+      has_read: false
     }
   end
 end
