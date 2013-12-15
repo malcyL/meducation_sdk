@@ -1,6 +1,6 @@
 module MeducationSDK
   class Message < Loquor::Resource
-    self.path = "/message_threads"
+    self.path = "/messages"
 
     def from
       @user ||= User.find(from_id)

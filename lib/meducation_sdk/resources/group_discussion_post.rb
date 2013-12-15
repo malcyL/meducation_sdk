@@ -1,6 +1,6 @@
 module MeducationSDK
   class GroupDiscussionPost < Loquor::Resource
-    self.path = "/group_discussions_posts"
+    self.path = "/group_discussion_posts"
 
     def user
       @user ||= User.find(user_id)

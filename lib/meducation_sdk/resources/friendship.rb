@@ -1,6 +1,6 @@
 module MeducationSDK
   class Friendship < Loquor::Resource
-    self.path = "/user_friendships"
+    self.path = "/friendships"
 
     def user
       @user ||= User.find(user_id)

@@ -6,6 +6,7 @@ require "meducation_sdk/configuration"
 require "meducation_sdk/mocker"
 
 RESOURCES = %w{
+  comment
   community
   community_membership
   ecommerce_subscription
@@ -15,7 +16,6 @@ RESOURCES = %w{
   group_discussion_post
   group_invite
   group_membership
-  item_comment
   knowledge_bank_question
   knowledge_bank_answer
   media_file
