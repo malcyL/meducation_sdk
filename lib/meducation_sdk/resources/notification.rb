@@ -16,7 +16,7 @@ module MeducationSDK
 
     self.attributes = {
       id: 1,
-      notification: "foobar",
+      action: "comment_new",
       user_id: 5,
       item_id: 3,
       item_type: "Comment"

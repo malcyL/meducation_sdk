@@ -5,8 +5,8 @@ module MeducationSDK
     def parents
       parent_ids.map { |p_id| MeshHeading.find(p_id) }
     end
-    
-    def parent_ids  
+
+    def parent_ids
       @data[:parents].map { |p| p['id'] }
     end
   end
