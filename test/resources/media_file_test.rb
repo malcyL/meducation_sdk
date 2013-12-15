@@ -5,6 +5,12 @@ module MeducationSDK
   class MediaFileTest < ResourceTest
     test_resource(MediaFile, '/media_files')
 
+    def test_comments_calls_sdk
+      media_file = MediaFile.new(id: 5)
+      MeducationSDK::Comment.expects(:where).with(item_id: media_file.id, item_type: "MediaFile")
+      media_file.comments
+    end
+
     def test_user_calls_sdk
       media_file = MediaFile.new(user_id: 3)
       MeducationSDK::User.expects(:find).with(3)

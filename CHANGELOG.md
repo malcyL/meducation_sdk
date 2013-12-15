@@ -1,3 +1,6 @@
+# 0.6.1 / 2013-12-15
+* [BUGFIX] Fix broken MediaFile#comments
+
 # 0.6.0 / 2013-12-15
 * [BUGFIX] Fix some incorrect urls
 

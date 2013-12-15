@@ -7,7 +7,7 @@ module MeducationSDK
     end
 
     def comments
-      @comments ||= ItemComment.where(item_id: id, item_type: "MediaFile")
+      @comments ||= Comment.where(item_id: id, item_type: "MediaFile")
     end
 
     module State
