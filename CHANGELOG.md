@@ -1,3 +1,6 @@
+# 0.5.1 / 2013-12-15
+* [FEATURE] Improve sample attributes.
+
 # 0.5.0 / 2013-12-14
 * [FEATURE] Improve sample attributes.
 
