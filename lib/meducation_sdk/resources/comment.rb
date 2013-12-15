@@ -1,6 +1,6 @@
 module MeducationSDK
-  class ItemComment < Loquor::Resource
-    self.path = "/item_comments"
+  class Comment < Loquor::Resource
+    self.path = "/comments"
 
     def item
       @item ||= "MeducationSDK::#{item_type}".constantize.find(item_id)
@@ -11,7 +11,7 @@ module MeducationSDK
     end
   end
 
-  class ItemCommentMock < ItemComment
+  class CommentMock < Comment
     extend Loquor::ResourceMock
 
     self.attributes = {

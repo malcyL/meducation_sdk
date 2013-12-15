@@ -11,7 +11,7 @@ module MeducationSDK
     end
   end
 
-  class NotificationMock < ItemComment
+  class NotificationMock < Notification
     extend Loquor::ResourceMock
 
     self.attributes = {

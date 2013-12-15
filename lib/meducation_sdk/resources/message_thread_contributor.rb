@@ -1,6 +1,6 @@
 module MeducationSDK
   class MessageThreadContributor < Loquor::Resource
-    self.path = "/message_threads"
+    self.path = "/message_thread_contributors"
   end
 
   class MessageThreadContributorMock < MessageThreadContributor
