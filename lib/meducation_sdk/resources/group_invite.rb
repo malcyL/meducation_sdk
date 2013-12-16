@@ -3,14 +3,17 @@ module MeducationSDK
     self.path = "/group_invites"
 
     def group
+      return nil unless group_id.to_i > 0
       @group ||= Group.find(group_id)
     end
 
     def invited_by
+      return nil unless invited_by_id.to_i > 0
       @invited_by ||= User.find(invited_by_id)
     end
 
     def user
+      return nil unless user_id.to_i > 0
       @user ||= User.find(user_id)
     end
   end

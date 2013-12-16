@@ -5,6 +5,10 @@ module MeducationSDK
     def created_by
       @created_by = User.find(created_by_id)
     end
+
+    def admins
+      [created_by]
+    end
   end
 
   class GroupMock < Group

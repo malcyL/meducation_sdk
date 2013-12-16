@@ -1,3 +1,6 @@
+# 0.7.0 / 2013-12-15
+* [BUGFIX] Add group admins
+
 # 0.6.1 / 2013-12-15
 * [BUGFIX] Fix broken MediaFile#comments
 
