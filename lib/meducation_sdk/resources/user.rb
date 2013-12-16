@@ -7,7 +7,9 @@ module MeducationSDK
     end
 
     def communities
-      Community.where(id: community_memberships.map(&:id))
+      community_membership_ids = community_memberships.map(&:id)
+      return [] if community_membership_ids.empty?
+      Community.where(id: community_membership_ids)
     end
 
     def settings
