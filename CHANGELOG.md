@@ -1,3 +1,6 @@
+# 0.8.0 / 2013-12-16
+* [BUGFIX] Add true/false substitute values
+
 # 0.7.0 / 2013-12-15
 * [BUGFIX] Add group admins
 

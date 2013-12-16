@@ -35,6 +35,9 @@ RESOURCES.each do |resource|
   require "meducation_sdk/resources/#{resource}"
 end
 
+Loquor.config.substitute_values[true]  = ":__true__"
+Loquor.config.substitute_values[false] = ":__false__"
+
 module MeducationSDK
   def self.config
     @config ||= Configuration.new
