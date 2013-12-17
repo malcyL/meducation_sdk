@@ -11,9 +11,13 @@ module MeducationSDK
     attr_writer *SETTINGS
 
     def initialize
-      Filum.config.logfile = "./log/loquor.log"
-      Loquor.config.endpoint = "http://www.meducation.net/system"
       self.logger = Filum.logger
+
+      Loquor.config do |config|
+        config.endpoint = "http://www.meducation.net/system"
+        config.substitute_values[true]  = ":__true__"
+        config.substitute_values[false] = ":__false__"
+      end
     end
 
     [:access_id, :secret_key, :endpoint, :cache].each do |setting|

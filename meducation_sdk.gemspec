@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "activesupport", '~> 3.2.15'
-  spec.add_dependency "loquor", '~> 0.8.0'
+  spec.add_dependency "loquor", '~> 0.9.0'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
