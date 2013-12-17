@@ -10,6 +10,12 @@ module MeducationSDK
       MeducationSDK::MediaFile.expects(:find).with(2)
       comment.item
     end
+
+    def test_item_calls_sdk
+      comment = Comment.new(item_id: 2, item_type: "Premium::Tutorial")
+      MeducationSDK::PremiumTutorial.expects(:find).with(2)
+      comment.item
+    end
   end
 end
 
