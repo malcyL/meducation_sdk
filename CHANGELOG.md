@@ -1,3 +1,6 @@
+# 0.10.0 / 2013-12-16
+* [FEATURE] Add comments to Premium tutorials.
+
 # 0.9.0 / 2013-12-16
 * [BUGFIX] Fix issues with Loquor being set at the wrong time.
 
