@@ -1,3 +1,6 @@
+# 0.9.0 / 2013-12-16
+* [BUGFIX] Fix issues with Loquor being set at the wrong time.
+
 # 0.8.0 / 2013-12-16
 * [BUGFIX] Add true/false substitute values
 
