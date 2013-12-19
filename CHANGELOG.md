@@ -1,3 +1,6 @@
+# 0.10.1 / 2013-12-19
+* [BUGFIX] Add missing field to the contributer entity.
+
 # 0.10.0 / 2013-12-16
 * [FEATURE] Add comments to Premium tutorials.
 
