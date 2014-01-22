@@ -1,3 +1,6 @@
+# 1.0.0 / 2014-01-22
+* [FEATURE] Add email_on_message to user settings
+
 # 0.10.1 / 2013-12-19
 * [BUGFIX] Add missing field to the contributer entity.
 

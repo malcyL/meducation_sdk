@@ -8,7 +8,8 @@ module MeducationSDK
 
     self.attributes = {
       id: 1,
-      email_on_comment: true
+      email_on_comment: true,
+      email_on_message: true
     }
   end
 end
