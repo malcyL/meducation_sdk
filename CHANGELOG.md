@@ -1,3 +1,6 @@
+# 1.1.1 / 2014-01-24
+* [FEATURE] Use version 1.1.1 of Loquor to fix respond_to? issue with strings
+
 # 1.1.0 / 2014-01-24
 * [FEATURE] Use version 1.1 of Loquor to fix respond_to? issue
 
