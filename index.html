@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Meducation sdk by meducation</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Meducation sdk</h1>
+        <h2>A lightweight SDK wrapper for the Meducation API based on Loquor</h2>
+        <a href="https://github.com/meducation/meducation_sdk" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="meducation-sdk" class="anchor" href="#meducation-sdk"><span class="octicon octicon-link"></span></a>Meducation SDK</h1>
+
+<p><a href="https://travis-ci.org/meducation/meducation_sdk"><img src="https://travis-ci.org/meducation/meducation_sdk.png" alt="Build Status"></a>
+<a href="https://gemnasium.com/meducation/meducation_sdk"><img src="https://gemnasium.com/meducation/meducation_sdk.png?travis" alt="Dependencies"></a>
+<a href="https://codeclimate.com/github/meducation/meducation_sdk"><img src="https://codeclimate.com/github/meducation/meducation_sdk.png" alt="Code Climate"></a></p>
+
+<p>A wrapper for Meducation's SDK.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="n">gem</span> <span class="s1">'meducation_sdk'</span>
+</pre></div>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Resources accept the following methods:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="no">MeducationSDK</span><span class="o">::</span><span class="no">MediaFile</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+<span class="no">MeducationSDK</span><span class="o">::</span><span class="no">MediaFile</span><span class="o">.</span><span class="n">find_each</span> <span class="c1">#=&gt; do ... end</span>
+<span class="no">MeducationSDK</span><span class="o">::</span><span class="no">MediaFile</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="ss">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">)</span> <span class="c1">#=&gt; []</span>
+<span class="no">MeducationSDK</span><span class="o">::</span><span class="no">MediaFile</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="ss">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">)</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="o">[</span><span class="ss">:id</span><span class="p">,</span> <span class="ss">:name</span><span class="o">]</span><span class="p">)</span> <span class="c1">#=&gt; []</span>
+<span class="no">MeducationSDK</span><span class="o">::</span><span class="no">MediaFile</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="ss">foo</span><span class="p">:</span> <span class="s1">'bar'</span><span class="p">)</span>
+</pre></div>
+
+<p>The following objects are currently supported:</p>
+
+<div class="highlight highlight-ruby"><pre><span class="no">MediaFile</span>
+<span class="no">User</span>
+<span class="no">ItemComment</span>
+</pre></div>
+
+<h3>
+<a name="is-it-any-good" class="anchor" href="#is-it-any-good"><span class="octicon octicon-link"></span></a>Is it any good?</h3>
+
+<p><a href="http://news.ycombinator.com/item?id=3067434">Yes.</a></p>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Firstly, thank you!! <img class="emoji" title=":heart:" alt=":heart:" src="https://github.global.ssl.fastly.net/images/icons/emoji/heart.png" height="20" width="20" align="absmiddle"><img class="emoji" title=":sparkling_heart:" alt=":sparkling_heart:" src="https://github.global.ssl.fastly.net/images/icons/emoji/sparkling_heart.png" height="20" width="20" align="absmiddle"><img class="emoji" title=":heart:" alt=":heart:" src="https://github.global.ssl.fastly.net/images/icons/emoji/heart.png" height="20" width="20" align="absmiddle"></p>
+
+<p>We'd love to have you involved. Please read our <a href="https://github.com/meducation/propono/tree/master/CONTRIBUTING.md">contributing guide</a> for information on how to get stuck in.</p>
+
+<h3>
+<a name="contributors" class="anchor" href="#contributors"><span class="octicon octicon-link"></span></a>Contributors</h3>
+
+<p>This project is managed by the <a href="http://company.meducation.net/about#team">Meducation team</a>. </p>
+
+<p>These individuals have come up with the ideas and written the code that made this possible:</p>
+
+<ul>
+<li><a href="http://github.com/iHID">Jeremy Walker</a></li>
+</ul><h2>
+<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h2>
+
+<p>Copyright (C) 2013 New Media Education Ltd</p>
+
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.</p>
+
+<p>A copy of the GNU Affero General Public License is available in <a href="https://github.com/meducation/propono/blob/master/LICENCE.md">Licence.md</a>
+along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/meducation/meducation_sdk/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/meducation/meducation_sdk/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/meducation/meducation_sdk"></a> is maintained by <a href="https://github.com/meducation">meducation</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
