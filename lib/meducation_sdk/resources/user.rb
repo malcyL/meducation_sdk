@@ -28,7 +28,9 @@ module MeducationSDK
       photo_url: "http://i.telegraph.co.uk/multimedia/archive/02351/cross-eyed-cat_2351472k.jpg",
       primary_email_address: "jez.walker@gmail.com",
       url_code: "asd1234567",
-      is_site_admin: false
+      is_site_admin: false,
+      views_in_last_30_days: 30,
+      views_in_last_60_days: 60
     }
   end
 end
