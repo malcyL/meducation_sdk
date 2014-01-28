@@ -29,7 +29,9 @@ module MeducationSDK
       title: "Abdominal Ultrasound Tutorial",
       preview_image_url: "http://www.example.com/1.jpg",
       mesh_headings: [{id: 1, name: "cardiology"}], 
-      rating: 10
+      rating: 10,
+      views_in_last_30_days: 30,
+      views_in_last_60_days: 60
     }
   end
 end
