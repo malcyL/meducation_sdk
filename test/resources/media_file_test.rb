@@ -22,6 +22,11 @@ module MeducationSDK
       assert media_file.respond_to?(:rating)
     end
 
+    def test_mdia_file_responds_to_rating
+      media_file = MediaFile.new(rating: 5)
+      assert media_file.respond_to?('rating')
+    end
+
     def test_uploaded_state_is_correct
       assert_equal 1, MeducationSDK::MediaFile::State.uploaded
     end
