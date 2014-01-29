@@ -31,7 +31,8 @@ module MeducationSDK
       mesh_headings: [{id: 1, name: "cardiology"}], 
       rating: 10,
       views_in_last_30_days: 30,
-      views_in_last_60_days: 60
+      views_in_last_60_days: 60,
+      usefulness: 1
     }
   end
 end
