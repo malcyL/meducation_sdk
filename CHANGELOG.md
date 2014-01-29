@@ -1,3 +1,6 @@
+#1.1.2 / 2014-01-29
+* [FEATURE] Adds views_in_last_30_days, views_in_last_60_days and usefulness to output
+
 # 1.1.1 / 2014-01-24
 * [FEATURE] Use version 1.1.1 of Loquor to fix respond_to? issue with strings
 
