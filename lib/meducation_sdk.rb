@@ -6,6 +6,7 @@ require "meducation_sdk/configuration"
 require "meducation_sdk/mocker"
 
 RESOURCES = %w{
+  collection_topic
   comment
   community
   community_membership
@@ -26,7 +27,6 @@ RESOURCES = %w{
   mnemonic
   notification
   partner
-  premium_tutorial
   syllabus_item
   user
   user_settings
