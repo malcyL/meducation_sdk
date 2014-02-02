@@ -1,6 +1,6 @@
 module MeducationSDK
-  class PremiumTutorial < Loquor::Resource
-    self.path = "/premium_tutorials"
+  class CollectionTopic < Loquor::Resource
+    self.path = "/collection_topics"
 
     def user
       @user ||= User.find(user_id)
@@ -11,14 +11,16 @@ module MeducationSDK
     end
   end
 
-  class PremiumTutorialMock < PremiumTutorial
+  class CollectionTopicMock < CollectionTopic
     extend Loquor::ResourceMock
 
     self.attributes = {
       id: 1,
       title: "Al's Medicine Tutorial",
-      user_id: 5,
-      comment_ids: [4,5,6]
+      comment_ids: [4,5,6],
+      rating: 10,
+      views_in_last_30_days: 30,
+      views_in_last_60_days: 60
     }
   end
 end

@@ -1,4 +1,8 @@
-#1.1.2 / 2014-01-29
+# 1.2.0 / 2014-02-01
+* [FEATURE] Add support for Collection Topics
+* [FEATURE] Remove support for Premium Tutorials
+
+# 1.1.2 / 2014-01-29
 * [FEATURE] Adds views_in_last_30_days, views_in_last_60_days and usefulness to output
 
 # 1.1.1 / 2014-01-24
