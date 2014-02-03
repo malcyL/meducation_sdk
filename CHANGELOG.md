@@ -1,3 +1,6 @@
+# 1.2.1 / 2014-02-03
+* [FEATURE] Add support for Collections and Sections
+
 # 1.2.0 / 2014-02-01
 * [FEATURE] Add support for Collection Topics
 * [FEATURE] Remove support for Premium Tutorials
