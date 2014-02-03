@@ -14,7 +14,7 @@ module MeducationSDK
 
   end
 
-  class CollectionTopicMock < Collection
+  class CollectionTopicMock < CollectionTopic
     extend Loquor::ResourceMock
 
     self.attributes = {
