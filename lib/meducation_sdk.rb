@@ -32,6 +32,7 @@ RESOURCES = %w{
   syllabus_item
   user
   user_settings
+  vote
 }
 RESOURCES.each do |resource|
   require "meducation_sdk/resources/#{resource}"

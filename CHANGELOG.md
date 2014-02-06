@@ -1,3 +1,6 @@
+# 1.2.3 / 2014-02-06
+* [FEATURE] Add votes
+
 # 1.2.2 / 2014-02-06
 * [FEATURE] Add short_display_name_to_user
 
