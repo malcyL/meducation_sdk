@@ -1,3 +1,9 @@
+# 1.2.4 / 2014-02-11
+* [FEATURE] Add user email data
+
+# 1.2.3 / 2014-02-06
+* [FEATURE] Add votes
+
 # 1.2.3 / 2014-02-06
 * [FEATURE] Add votes
 
