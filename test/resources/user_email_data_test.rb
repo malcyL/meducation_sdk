@@ -5,9 +5,5 @@ module MeducationSDK
   class UserEmailDataTest < ResourceTest
     test_resource(UserEmailData, '/user_email_data')
   end
-
-  class UserEmailDataMock < UserEmailData
-    extend Loquor::ResourceMock
-  end
 end
 
