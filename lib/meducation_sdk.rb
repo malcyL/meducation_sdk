@@ -31,6 +31,7 @@ RESOURCES = %w{
   partner
   syllabus_item
   user
+  user_email_data
   user_settings
   vote
 }
