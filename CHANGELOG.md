@@ -1,8 +1,11 @@
+# 1.4.0 / 2014-02-12
+* [FEATURE] Allow for submodules in mocks
+
 # 1.3.0 / 2014-02-12
-* [BUGFIX] Use Loquor 1.2
+* [FEATURE] Use Loquor 1.2
 
 # 1.2.6 / 2014-02-12
-* [BUGFIX] Add boards and board items
+* [FEATURE] Add boards and board items
 
 # 1.2.5 / 2014-02-11
 * [BUGFIX] Fix problem with mocking new user email data
