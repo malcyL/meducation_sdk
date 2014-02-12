@@ -1,3 +1,6 @@
+# 1.3.0 / 2014-02-12
+* [BUGFIX] Use Loquor 1.2
+
 # 1.2.6 / 2014-02-12
 * [BUGFIX] Add boards and board items
 
