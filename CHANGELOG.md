@@ -1,4 +1,7 @@
-# 1.2.4 / 2014-02-11
+# 1.2.6 / 2014-02-12
+* [BUGFIX] Add boards and board items
+
+# 1.2.5 / 2014-02-11
 * [BUGFIX] Fix problem with mocking new user email data
 
 # 1.2.4 / 2014-02-11

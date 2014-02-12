@@ -6,6 +6,8 @@ require "meducation_sdk/configuration"
 require "meducation_sdk/mocker"
 
 RESOURCES = %w{
+  board
+  board_item
   collection
   collection_section
   collection_topic
