@@ -1,3 +1,7 @@
+# 1.4.1 / 2014-02-13
+* [FEATURE] Add badges
+* [FEATURE] Add blogs and bloggers
+
 # 1.4.0 / 2014-02-12
 * [FEATURE] Allow for submodules in mocks
 * [FEATURE] Add befriender badges
