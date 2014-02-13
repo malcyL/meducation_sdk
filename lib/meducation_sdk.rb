@@ -6,6 +6,7 @@ require "meducation_sdk/configuration"
 require "meducation_sdk/mocker"
 
 RESOURCES = %w{
+  badges/befriender_badge
   board
   board_item
   collection
