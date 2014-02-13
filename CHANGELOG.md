@@ -1,3 +1,6 @@
+# 1.4.2 / 2014-02-13
+* [BUGFIX] Fix badges mocking
+
 # 1.4.1 / 2014-02-13
 * [FEATURE] Add badges
 * [FEATURE] Add blogs and bloggers
