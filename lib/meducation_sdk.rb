@@ -5,7 +5,11 @@ require "meducation_sdk/version"
 require "meducation_sdk/configuration"
 require "meducation_sdk/mocker"
 
+require "meducation_sdk/resources/badges/badge"
+
 RESOURCES = %w{
+  badges/befriender_badge
+  badges/photogenic_badge
   board
   board_item
   collection

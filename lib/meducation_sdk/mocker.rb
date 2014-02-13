@@ -17,40 +17,56 @@ module MeducationSDK
     end
 
     def mock!
-      return if MeducationSDK.const_defined?(original_klass)
+      return if mock_module.const_defined?(original_class_name)
 
-      resource = "MeducationSDK::#{resource_klass}".constantize
-      mock = "MeducationSDK::#{mock_klass}".constantize
+      resource = "#{mock_module_name}::#{resource_class_name}".constantize
+      mock = "#{mock_module_name}::#{mock_class_name}".constantize
 
-      MeducationSDK.const_set(original_klass, resource)
-      MeducationSDK.send(:remove_const, resource_klass)
-      MeducationSDK.const_set(resource_klass, mock)
-      MeducationSDK.send(:remove_const, mock_klass)
+      mock_module.const_set(original_class_name, resource)
+      mock_module.send(:remove_const, resource_class_name)
+      mock_module.const_set(resource_class_name, mock)
+      mock_module.send(:remove_const, mock_class_name)
     end
 
     def unmock!
-      return unless MeducationSDK.const_defined?(original_klass)
+      return unless mock_module.const_defined?(original_class_name)
 
-      original = "MeducationSDK::#{original_klass}".constantize
-      resource = "MeducationSDK::#{resource_klass}".constantize
+      original = "#{mock_module_name}::#{original_class_name}".constantize
+      resource = "#{mock_module_name}::#{resource_class_name}".constantize
 
-      MeducationSDK.const_set(mock_klass, resource)
-      MeducationSDK.send(:remove_const, resource_klass)
-      MeducationSDK.const_set(resource_klass, original)
-      MeducationSDK.send(:remove_const, original_klass)
+      mock_module.const_set(mock_class_name, resource)
+      mock_module.send(:remove_const, resource_class_name)
+      mock_module.const_set(resource_class_name, original)
+      mock_module.send(:remove_const, original_class_name)
     end
 
     private
-    def resource_klass
-      @resource_name.camelize
+    def resource_class_name
+      @resource_class_name ||= @resource_name.camelize.split("::").last
     end
 
-    def mock_klass
-       "#{@resource_name}_mock".camelize
+    def mock_class_name
+       @mock_class_name ||= "#{@resource_name}_mock".camelize.split("::").last
     end
 
-    def original_klass
-      "#{@resource_name}_original".camelize
+    def original_class_name
+      @original_class_name ||= "#{@resource_name}_original".camelize.split("::").last
+    end
+
+    def mock_module
+      @mock_module ||= mock_module_name.constantize
+    end
+
+    def mock_module_name
+      @mock_module_name ||= begin
+        parts = @resource_name.camelize.split("::")
+        if parts.size == 1
+          "MeducationSDK"
+        else
+          parts.pop
+          "MeducationSDK::#{parts.join("::")}"
+        end
+      end
     end
   end
 end

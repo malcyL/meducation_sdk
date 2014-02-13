@@ -22,8 +22,7 @@ class Minitest::Test
       config.logger = MeducationSDK.config.logger
       config.access_id = "Sermo"
       config.secret_key = "foobar"
-      config.endpoint = "http://localhost:3000"
+      config.endpoint = "http://localhost:3000/system"
     end
   end
 end
-
