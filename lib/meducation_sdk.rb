@@ -20,6 +20,8 @@ RESOURCES = %w{
   badges/photogenic_badge
   badges/questioner_badge
   badges/respected_author_badge
+  blog_post
+  blogger
   board
   board_item
   collection
