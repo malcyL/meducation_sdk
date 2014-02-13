@@ -2,6 +2,18 @@ module MeducationSDK
   module Badges
     class PhotogenicBadge < Badge
       self.path = "/badges/photogenic_badges"
+
+      def name
+        'Photogenic'
+      end
+
+      def description
+       'Unlocked by uploading a profile picture.'
+      end
+
+      def metal
+        :bronze
+      end
     end
 
     class PhotogenicBadgeMock < PhotogenicBadge

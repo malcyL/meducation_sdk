@@ -2,6 +2,18 @@ module MeducationSDK
   module Badges
     class EnlightenerBadge < Badge
       self.path = "/badges/enlightener_badges"
+
+      def name
+        'Enlightener'
+      end
+
+      def description
+       'Posted an accepted answer for 10 questions.'
+      end
+
+      def metal
+        :silver
+      end
     end
 
     class EnlightenerBadgeMock < EnlightenerBadge
