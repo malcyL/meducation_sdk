@@ -8,6 +8,7 @@ lib = File.expand_path('../../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require "meducation_sdk"
+require_relative 'resources/badges/badge_test.rb'
 
 class Minitest::Test
   def setup
