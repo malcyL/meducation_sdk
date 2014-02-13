@@ -1,5 +1,7 @@
 # 1.4.0 / 2014-02-12
 * [FEATURE] Allow for submodules in mocks
+* [FEATURE] Add befriender badges
+* [FEATURE] Add photogenic badges
 
 # 1.3.0 / 2014-02-12
 * [FEATURE] Use Loquor 1.2
