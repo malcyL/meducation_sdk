@@ -1,3 +1,6 @@
+# 1.4.3 / 2014-02-13
+* [FEATURE] Add names and descriptions to badges
+
 # 1.4.2 / 2014-02-13
 * [BUGFIX] Fix badges mocking
 

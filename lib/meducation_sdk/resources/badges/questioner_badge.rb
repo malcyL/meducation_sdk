@@ -2,6 +2,18 @@ module MeducationSDK
   module Badges
     class QuestionerBadge < Badge
       self.path = "/badges/questioner_badges"
+
+      def name
+        'Questioner'
+      end
+
+      def description
+       'Unlocked by asking an answered question rated at least +10.'
+      end
+
+      def metal
+        :bronze
+      end
     end
 
     class QuestionerBadgeMock < QuestionerBadge

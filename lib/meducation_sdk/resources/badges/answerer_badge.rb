@@ -2,6 +2,14 @@ module MeducationSDK
   module Badges
     class AnswererBadge < Badge
       self.path = "/badges/answerer_badges"
+
+      def name
+        'Answerer'
+      end
+
+      def description
+       'Unlocked by having an answer accepted.'
+      end
     end
 
     class AnswererBadgeMock < AnswererBadge

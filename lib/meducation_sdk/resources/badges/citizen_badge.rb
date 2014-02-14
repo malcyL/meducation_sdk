@@ -2,6 +2,18 @@ module MeducationSDK
   module Badges
     class CitizenBadge < Badge
       self.path = "/badges/citizen_badges"
+
+      def name
+        'Citizen'
+      end
+
+      def description
+       'Unlocked by joining Meducation.'
+      end
+
+      def metal
+        :bronze
+      end
     end
 
     class CitizenBadgeMock < CitizenBadge
