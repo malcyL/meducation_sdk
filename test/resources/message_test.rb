@@ -1,5 +1,5 @@
-require File.expand_path('../../test_helper', __FILE__)
-require File.expand_path('../../resource_test', __FILE__)
+require_relative '../test_helper'
+require_relative '../resource_test'
 
 module MeducationSDK
   class MessageTest < ResourceTest
