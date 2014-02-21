@@ -1,9 +1,9 @@
 module MeducationSDK
-  class BoardItem < Loquor::Resource
+  class BoardItem < Resource
     self.path = "/board_items"
 
     def item
-      @item ||= "MeducationSDK::#{item_type.gsub("::", "")}".constantize.find(item_id)
+      @item ||= class_for(item_type).find(item_id)
     end
 
     def board

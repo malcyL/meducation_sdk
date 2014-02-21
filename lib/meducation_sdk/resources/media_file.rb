@@ -1,5 +1,5 @@
 module MeducationSDK
-  class MediaFile < Loquor::Resource
+  class MediaFile < Resource
     self.path = "/media_files"
 
     def user

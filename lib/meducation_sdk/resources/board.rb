@@ -1,9 +1,9 @@
 module MeducationSDK
-  class Board < Loquor::Resource
+  class Board < Resource
     self.path = "/boards"
 
     def owner
-      @owner ||= "MeducationSDK::#{owner_type.gsub("::", "")}".constantize.find(owner_id)
+      @owner ||= class_for(owner_type).find(owner_id)
     end
 
     def created_by

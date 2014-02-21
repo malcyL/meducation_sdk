@@ -1,5 +1,5 @@
 module MeducationSDK
-  class KnowledgeBankQuestion < Loquor::Resource
+  class KnowledgeBankQuestion < Resource
     self.path = "/knowledge_bank_questions"
 
     def user

@@ -17,5 +17,15 @@ module MeducationSDK
         end
       end
     end
+
+    {
+      "Item::Comment" => Comment,
+      "KnowledgeBank::Question" => KnowledgeBankQuestion
+    }.each do |meducation_type, sdk_class|
+      define_method "test_class_for_#{meducation_type.underscore.gsub("/", "_")}" do
+        r = Resource.new({})
+        assert_equal sdk_class, r.class_for(meducation_type)
+      end
+    end
   end
 end

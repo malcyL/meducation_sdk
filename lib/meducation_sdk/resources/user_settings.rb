@@ -1,5 +1,5 @@
 module MeducationSDK
-  class UserSettings < Loquor::Resource
+  class UserSettings < Resource
     self.path = "/user_settings"
   end
 

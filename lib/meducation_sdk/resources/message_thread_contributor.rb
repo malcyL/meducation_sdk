@@ -1,7 +1,7 @@
 module MeducationSDK
-  class MessageThreadContributor < Loquor::Resource
+  class MessageThreadContributor < Resource
     self.path = "/message_thread_contributors"
-    
+
     def user
       @user ||= User.find(user_id)
     end

@@ -1,5 +1,5 @@
 module MeducationSDK
-  class MessageThread < Loquor::Resource
+  class MessageThread < Resource
     self.path = "/message_threads"
 
     def contributors

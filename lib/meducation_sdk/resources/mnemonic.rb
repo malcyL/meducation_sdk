@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Mnemonic < Loquor::Resource
+  class Mnemonic < Resource
     self.path = "/mnemonics"
   end
 

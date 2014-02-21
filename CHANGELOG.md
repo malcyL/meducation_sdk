@@ -1,3 +1,6 @@
+# 1.4.4 / 2014-02-13
+* [BUGFIX] Fix calls to item not returning item if item is a comment
+
 # 1.4.3 / 2014-02-13
 * [FEATURE] Add names and descriptions to badges
 

@@ -1,5 +1,5 @@
 module MeducationSDK
-  class EcommerceSubscription < Loquor::Resource
+  class EcommerceSubscription < Resource
     self.path = "/ecommerce_subscriptions"
 
     def user
