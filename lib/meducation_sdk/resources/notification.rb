@@ -1,9 +1,9 @@
 module MeducationSDK
-  class Notification < Loquor::Resource
+  class Notification < Resource
     self.path = "/notifications"
 
     def item
-      @item ||= "MeducationSDK::#{item_type}".constantize.find(item_id)
+      @item ||= class_for(item_type).find(item_id)
     end
 
     def user

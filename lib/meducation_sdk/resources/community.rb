@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Community < Loquor::Resource
+  class Community < Resource
     self.path = "/communities"
   end
 

@@ -1,9 +1,9 @@
 module MeducationSDK
-  class Comment < Loquor::Resource
+  class Comment < Resource
     self.path = "/comments"
 
     def item
-      @item ||= "MeducationSDK::#{item_type.gsub("::", "")}".constantize.find(item_id)
+      @item ||= class_for(item_type).find(item_id)
     end
 
     def user

@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Message < Loquor::Resource
+  class Message < Resource
     self.path = "/messages"
 
     def from

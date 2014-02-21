@@ -1,5 +1,5 @@
 module MeducationSDK
-  class User < Loquor::Resource
+  class User < Resource
     self.path = "/users"
 
     def community_memberships

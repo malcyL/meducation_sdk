@@ -1,5 +1,5 @@
 module MeducationSDK
-  class UserEmailData < Loquor::Resource
+  class UserEmailData < Resource
     self.path = "/user_email_data"
   end
 
@@ -8,7 +8,6 @@ module MeducationSDK
     extend Loquor::ResourceMock
 
     self.attributes = {
-    	
     }
   end
 

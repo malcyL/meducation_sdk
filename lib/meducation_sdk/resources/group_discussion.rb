@@ -1,5 +1,5 @@
 module MeducationSDK
-  class GroupDiscussion < Loquor::Resource
+  class GroupDiscussion < Resource
     self.path = "/group_discussions"
 
     def group

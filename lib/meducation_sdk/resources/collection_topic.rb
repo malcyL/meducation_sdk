@@ -1,6 +1,6 @@
 module MeducationSDK
 
-  class CollectionTopic < Loquor::Resource
+  class CollectionTopic < Resource
 
     self.path = "/collection_topics"
 

@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Blogger < Loquor::Resource
+  class Blogger < Resource
     self.path = "/bloggers"
 
     def user

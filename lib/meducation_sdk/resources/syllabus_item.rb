@@ -1,5 +1,5 @@
 module MeducationSDK
-  class SyllabusItem < Loquor::Resource
+  class SyllabusItem < Resource
     self.path = "/syllabus_items"
   end
 

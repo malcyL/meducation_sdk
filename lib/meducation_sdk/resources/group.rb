@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Group < Loquor::Resource
+  class Group < Resource
     self.path = "/groups"
 
     def created_by

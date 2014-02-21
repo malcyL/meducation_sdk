@@ -1,5 +1,5 @@
 module MeducationSDK
-  class MeshHeading < Loquor::Resource
+  class MeshHeading < Resource
     self.path = "/mesh_headings"
 
     def parents

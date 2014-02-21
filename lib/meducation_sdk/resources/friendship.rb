@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Friendship < Loquor::Resource
+  class Friendship < Resource
     self.path = "/friendships"
 
     def user

@@ -1,5 +1,5 @@
 module MeducationSDK
-  class GroupInvite < Loquor::Resource
+  class GroupInvite < Resource
     self.path = "/group_invites"
 
     def group

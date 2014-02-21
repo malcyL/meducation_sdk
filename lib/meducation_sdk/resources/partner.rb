@@ -1,5 +1,5 @@
 module MeducationSDK
-  class Partner < Loquor::Resource
+  class Partner < Resource
     self.path = "/partners"
   end
 
