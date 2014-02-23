@@ -1,3 +1,6 @@
+# 1.5.0 / 2014-02-22
+* [FEATURE] Add support for Filum 2
+
 # 1.4.4 / 2014-02-13
 * [BUGFIX] Fix calls to item not returning item if item is a comment
 
