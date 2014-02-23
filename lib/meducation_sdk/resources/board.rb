@@ -23,7 +23,8 @@ module MeducationSDK
       created_by_id: 8,
       owner_id: 5, owner_type: "Group",
       name: "Greatest Board",
-      description: "This is the greatest board ever!!"
+      description: "This is the greatest board ever!!",
+      created_at: "2013-04-20"
     }
   end
 end

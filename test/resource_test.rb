@@ -27,5 +27,11 @@ module MeducationSDK
         assert_equal sdk_class, r.class_for(meducation_type)
       end
     end
+
+    def test_created_at_is_a_datetime
+      resource = Resource.new(created_at: "2014-02-23T23:34:49Z")
+      assert resource.created_at.is_a?(DateTime)
+      assert_equal DateTime.new(2014, 2, 23, 23, 34, 49), resource.created_at
+    end
   end
 end
