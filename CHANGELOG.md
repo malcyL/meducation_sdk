@@ -1,3 +1,6 @@
+# 1.5.1 / 2014-02-23
+* [FEATURE] Add Board#items
+
 # 1.5.0 / 2014-02-22
 * [FEATURE] Add support for Filum 2
 

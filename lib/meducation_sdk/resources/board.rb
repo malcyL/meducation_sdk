@@ -10,6 +10,9 @@ module MeducationSDK
       @created_by ||= User.find(created_by_id)
     end
 
+    def items
+      @items ||= BoardItem.where(board_id: self.id)
+    end
   end
 
   class BoardMock < Board

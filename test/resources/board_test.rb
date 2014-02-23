@@ -16,5 +16,11 @@ module MeducationSDK
       MeducationSDK::User.expects(:find).with(2)
       board.created_by
     end
+
+    def test_items_calls_sdk
+      board = Board.new(id: 54)
+      MeducationSDK::BoardItem.expects(:where).with(board_id: board.id)
+      board.items
+    end
   end
 end
