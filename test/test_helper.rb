@@ -12,7 +12,7 @@ require_relative 'resources/badges/badge_test.rb'
 
 class Minitest::Test
   def setup
-    Filum.config.logfile = "./log/test.log"
+    Filum.setup("./log/test.log")
     MeducationSDK.config do |config|
       config.logger = mock()
       config.logger.stubs(:debug)
