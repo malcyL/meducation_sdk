@@ -1,3 +1,6 @@
+# 1.5.2 / 2014-02-24
+* [FEATURE] Add external resources
+
 # 1.5.1 / 2014-02-23
 * [FEATURE] Add created_at to boards and items.
 * [FEATURE] Add Board#items
