@@ -32,6 +32,7 @@ RESOURCES = %w{
   community
   community_membership
   ecommerce_subscription
+  external_resource
   friendship
   group
   group_discussion
