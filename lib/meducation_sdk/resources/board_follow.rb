@@ -1,6 +1,6 @@
 module MeducationSDK
-  class BoardFollower < Resource
-    self.path = "/board_followers"
+  class BoardFollow < Resource
+    self.path = "/board_follows"
 
     def board
       @board ||= Board.find(board_id)
@@ -12,7 +12,7 @@ module MeducationSDK
 
   end
 
-  class BoardFollowerMock < BoardFollower
+  class BoardFollowMock < BoardFollow
     extend Loquor::ResourceMock
 
     self.attributes = {
