@@ -24,7 +24,7 @@ RESOURCES = %w{
   blog_post
   blogger
   board
-  board_follower
+  board_follow
   board_item
   collection
   collection_section

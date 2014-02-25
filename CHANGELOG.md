@@ -1,3 +1,6 @@
+# 1.5.5 / 2014-02-25
+* [BUGFIX] Renamed board follower to board follow
+
 # 1.5.4 / 2014-02-25
 * [FEATURE] Add board followers
 
