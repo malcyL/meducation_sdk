@@ -1,3 +1,6 @@
+# 1.5.4 / 2014-02-25
+* [FEATURE] Add board followers
+
 # 1.5.3 / 2014-02-24
 * [FEATURE] Add external resources
 
