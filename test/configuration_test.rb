@@ -25,6 +25,11 @@ module MeducationSDK
       assert_equal "http://www.meducation.net/system", Loquor.config.endpoint
     end
 
+    def test_endpoint_is_set_correctly
+      Configuration.new
+      assert_equal true, Loquor.config.retry_404s
+    end
+
     def test_access_id_proxies_to_loquor
       access_id = "test-access-id"
       MeducationSDK.config.access_id = access_id

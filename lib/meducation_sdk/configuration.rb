@@ -17,6 +17,7 @@ module MeducationSDK
         config.endpoint = "http://www.meducation.net/system"
         config.substitute_values[true]  = ":__true__"
         config.substitute_values[false] = ":__false__"
+        config.retry_404s = true
       end
     end
 
