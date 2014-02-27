@@ -1,3 +1,6 @@
+# 1.5.6 / 2014-02-27
+* [FEATURE] Add comments to blog posts
+
 # 1.5.5 / 2014-02-25
 * [BUGFIX] Renamed board follower to board follow
 

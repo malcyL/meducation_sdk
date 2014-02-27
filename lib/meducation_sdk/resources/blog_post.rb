@@ -10,6 +10,9 @@ module MeducationSDK
       @blogger ||= Blogger.find(blogger_id)
     end
 
+    def comments
+      @comments ||= Comment.where(item_id: id, item_type: "BlogPost")
+    end
   end
 
   class BlogPostMock < BlogPost

@@ -16,6 +16,12 @@ module MeducationSDK
       MeducationSDK::Blogger.expects(:find).with(8)
       blog_post.blogger
     end
+
+    def test_comments_calls_sdk
+      blog_post = BlogPost.new(id: 5)
+      MeducationSDK::Comment.expects(:where).with(item_id: blog_post.id, item_type: "BlogPost")
+      blog_post.comments
+    end
   end
 end
 
