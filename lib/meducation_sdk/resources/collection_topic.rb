@@ -4,14 +4,17 @@ module MeducationSDK
 
     self.path = "/collection_topics"
 
-    def user
-      @user ||= User.find(user_id)
+    def authors
+      @authors ||= Author.where(id: author_ids)
+    end
+
+    def users
+      @authors ||= User.where(id: authors.map(&:user_id))
     end
 
     def comments
       @comments ||= Comment.where(id: comment_ids)
     end
-
   end
 
   class CollectionTopicMock < CollectionTopic
@@ -26,9 +29,8 @@ module MeducationSDK
       resource_ids: [3, 4, 5],
       views_in_last_30_days: 1,
       views_in_last_60_days: 2,
-      rating: 123
+      rating: 123,
+      author_ids: [7,12,54]
     }
-
   end
-
 end

@@ -1,3 +1,6 @@
+# 1.5.7 / 2014-03-4
+* [FEATURE] Add authors to to collection topics
+
 # 1.5.6 / 2014-02-27
 * [FEATURE] Add comments to blog posts
 

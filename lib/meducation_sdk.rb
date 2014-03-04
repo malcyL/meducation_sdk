@@ -9,6 +9,7 @@ require "meducation_sdk/resource"
 require "meducation_sdk/resources/badges/badge"
 
 RESOURCES = %w{
+  author
   badges/answerer_badge
   badges/befriender_badge
   badges/citizen_badge
