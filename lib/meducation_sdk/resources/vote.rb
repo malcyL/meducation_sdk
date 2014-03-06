@@ -1,9 +1,10 @@
 module MeducationSDK
   class Vote < Resource
     self.path = "/votes"
+    self.spi_type = "Item::Vote"
 
     def item
-      @item ||= class_for(item_type).find(item_id)
+      @item ||= sdk_class_for(item_type).find(item_id)
     end
 
     def user

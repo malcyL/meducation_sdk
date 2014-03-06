@@ -3,7 +3,7 @@ module MeducationSDK
     self.path = "/boards"
 
     def owner
-      @owner ||= class_for(owner_type).find(owner_id)
+      @owner ||= sdk_class_for(owner_type).find(owner_id)
     end
 
     def created_by
