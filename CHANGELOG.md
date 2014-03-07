@@ -1,4 +1,8 @@
-# 1.5.7 / 2014-03-4
+# 1.6.0 / 2014-03-07
+* [FEATURE] Add recommender
+* [FEATURE] Change routing to spi.meducation.net
+
+# 1.5.7 / 2014-03-04
 * [FEATURE] Add authors to to collection topics
 
 # 1.5.6 / 2014-02-27
