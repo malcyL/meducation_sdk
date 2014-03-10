@@ -1,6 +1,7 @@
 module MeducationSDK
   class KnowledgeBankQuestion < Resource
     self.path = "/knowledge_bank_questions"
+    self.spi_type = "KnowledgeBank::Question"
 
     def user
       @user = User.find(user_id)

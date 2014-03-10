@@ -17,15 +17,8 @@ module MeducationSDK
         end
       end
     end
-
-    {
-      "Item::Comment" => Comment,
-      "KnowledgeBank::Question" => KnowledgeBankQuestion
-    }.each do |meducation_type, sdk_class|
-      define_method "test_class_for_#{meducation_type.underscore.gsub("/", "_")}" do
-        r = Resource.new({})
-        assert_equal sdk_class, r.class_for(meducation_type)
-      end
+    define_method "test_helpers_included" do
+      assert Resource.new({}).respond_to?(:sdk_class_for)
     end
 
     def test_created_at_is_a_datetime

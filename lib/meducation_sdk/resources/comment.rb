@@ -1,9 +1,10 @@
 module MeducationSDK
   class Comment < Resource
     self.path = "/comments"
+    self.spi_type = "Item::Comment"
 
     def item
-      @item ||= class_for(item_type).find(item_id)
+      @item ||= sdk_class_for(item_type).find(item_id)
     end
 
     def user

@@ -22,10 +22,10 @@ module MeducationSDK
 
     def test_endpoint_is_set_correctly
       Configuration.new
-      assert_equal "http://www.meducation.net/system", Loquor.config.endpoint
+      assert_equal "http://spi.meducation.net", Loquor.config.endpoint
     end
 
-    def test_endpoint_is_set_correctly
+    def test_retry_404s_is_set_correctly
       Configuration.new
       assert_equal true, Loquor.config.retry_404s
     end

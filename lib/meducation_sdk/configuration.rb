@@ -6,7 +6,10 @@ module MeducationSDK
 
   class Configuration
 
-    SETTINGS = [ :logger ]
+    SETTINGS = [ 
+      :logger, 
+      :recommender_host, :recommender_port 
+    ]
 
     attr_writer *SETTINGS
 
@@ -14,11 +17,14 @@ module MeducationSDK
       self.logger = Filum.logger
 
       Loquor.config do |config|
-        config.endpoint = "http://www.meducation.net/system"
+        config.endpoint = "http://spi.meducation.net"
         config.substitute_values[true]  = ":__true__"
         config.substitute_values[false] = ":__false__"
         config.retry_404s = true
       end
+
+      self.recommender_host = "recommender.meducation.net"
+      self.recommender_port = 4567
     end
 
     [:access_id, :secret_key, :endpoint, :cache].each do |setting|

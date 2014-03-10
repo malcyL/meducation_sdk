@@ -7,7 +7,7 @@ module MeducationSDK
     end
 
     def item
-      @item ||= class_for(item_type).find(item_id)
+      @item ||= sdk_class_for(item_type).find(item_id)
     end
   end
 
