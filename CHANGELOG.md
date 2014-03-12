@@ -1,3 +1,6 @@
+# 1.6.2 / 2014-03-12
+* [BUGFIX] Fix path for views
+
 # 1.6.1 / 2014-03-12
 * [FEATURE] Add item views
 

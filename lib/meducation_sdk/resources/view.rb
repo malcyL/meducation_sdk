@@ -1,6 +1,6 @@
 module MeducationSDK
   class View < Resource
-    self.path = "/view"
+    self.path = "/views"
     self.spi_type = "Item::View"
 
     def item
