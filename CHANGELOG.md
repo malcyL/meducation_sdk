@@ -1,3 +1,6 @@
+# 1.6.1 / 2014-03-12
+* [FEATURE] Add item views
+
 # 1.6.0 / 2014-03-07
 * [FEATURE] Add recommender
 * [FEATURE] Change routing to spi.meducation.net

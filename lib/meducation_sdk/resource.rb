@@ -64,6 +64,7 @@ RESOURCES = %w{
   user
   user_email_data
   user_settings
+  view
   vote
 }
 
