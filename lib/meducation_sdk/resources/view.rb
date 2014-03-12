@@ -19,6 +19,7 @@ module MeducationSDK
       id: 1,
       user_id: 8,
       item_id: 5,
+      ip_address: '192.168.0.1',
       item_type: "MediaFile"
     }
   end

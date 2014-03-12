@@ -1,3 +1,6 @@
+# 1.6.3 / 2014-03-12
+* [BUGFIX] Add ip_address to view sample
+
 # 1.6.2 / 2014-03-12
 * [BUGFIX] Fix path for views
 
