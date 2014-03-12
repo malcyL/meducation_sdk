@@ -3,7 +3,7 @@ require_relative '../resource_test'
 
 module MeducationSDK
   class ViewTest < ResourceTest
-    test_resource(View, '/view')
+    test_resource(View, '/views')
 
     def test_item_calls_sdk
       view = View.new(user_id: 30660, item_id: 2, item_type: "MediaFile")
