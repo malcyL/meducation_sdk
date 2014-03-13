@@ -1,3 +1,6 @@
+# 1.6.4 / 2014-03-13
+* [FEATURE] Recommendations are padded with good resources to reach limit
+
 # 1.6.3 / 2014-03-12
 * [BUGFIX] Add ip_address to view sample
 
