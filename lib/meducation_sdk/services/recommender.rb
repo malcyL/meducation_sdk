@@ -10,16 +10,23 @@ module MeducationSDK
     def initialize(item, options = {})
       @item = item
       @options = options
+      @limit = options[:limit] || 5
     end
 
     def recommend
-      generate_recommendations
+      recommendations = generate_recommendations
+      if recommendations.size < @limit
+        log "recommendations.size (#{recommendations.size}) is < limit of #{@limit}"
+        recommendations += MeducationSDK::MediaFile.where('rating > 2').per(@limit - recommendations.size).order(:random).to_a
+      else
+        log "recommendations.size (#{recommendations.size}) is >= limit of #{@limit}"
+      end
+      recommendations
     rescue => e
       log_error("!!Recommender Error!!")
       log_error(e.message)
       log_error(e.backtrace)
-      #Item::Recommendation.where(item_type: @item.class.name).where(item_id: @item.id).includes(:recommendation).map(&:recommendation)
-      []
+      MeducationSDK::MediaFile.where('rating > 2').per(@limit).order(:random).to_a
     end
 
     def generate_recommendations
