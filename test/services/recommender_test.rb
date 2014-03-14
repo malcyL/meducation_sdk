@@ -37,11 +37,19 @@ module MeducationSDK
       Recommender.recommend(nil)
     end
 
-    def test_should_call_the_recommender_service
+    def test_should_call_the_recommender_service_for_individual_recommendation
       @per_result.expects(:per).with(5).returns(@per_result)
-      Net::HTTP.expects(:get_response).with("recommender.meducation.net", "/MediaFile/#{item.id}", 4567).returns(empty_response)
+      Net::HTTP.expects(:get_response).with("recommender.meducation.net", "/combined?MediaFile/#{item.id}", 4567).returns(empty_response)
       MediaFile.expects(:where).with('rating > 2').returns(@per_result)
       Recommender.new(item).recommend
+    end
+
+    def test_should_call_the_recommender_service_for_multiple_recommendations
+      @per_result.expects(:per).with(5).returns(@per_result)
+      @per_result.stubs(to_a: [item, item2, item3])
+      Net::HTTP.expects(:get_response).with("recommender.meducation.net", "/combined?MediaFile/#{item.id}&MediaFile/#{item2.id}&MediaFile/#{item3.id}", 4567).returns(empty_response)
+      MediaFile.expects(:where).with('rating > 2').returns(@per_result)
+      Recommender.new([item, item2, item3]).recommend
     end
 
     def test_should_call_parse_results_of_recommendation_service
