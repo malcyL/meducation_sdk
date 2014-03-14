@@ -1,3 +1,6 @@
+# 1.6.5 / 2014-03-14
+* [FEATURE] Allow recommendations of multiple items
+
 # 1.6.4 / 2014-03-13
 * [FEATURE] Recommendations are padded with good resources to reach limit
 

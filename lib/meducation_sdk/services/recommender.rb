@@ -2,13 +2,13 @@ module MeducationSDK
   class Recommender
     include Helpers
 
-    def self.recommend(item, options = {})
-      new(item, options).recommend
+    def self.recommend(items, options = {})
+      new(items, options).recommend
     end
 
-    attr_reader :item
-    def initialize(item, options = {})
-      @item = item
+    attr_reader :items
+    def initialize(items, options = {})
+      @items = [items].flatten
       @options = options
       @limit = options[:limit] || 5
     end
@@ -54,7 +54,12 @@ module MeducationSDK
     end
 
     def recommender_json
-      path = "/#{spi_type_for(item.class.name)}/#{item.id}"
+      path = "/combined"
+      separator = "?"
+      @items.each do |item|
+        path << separator << "#{spi_type_for(item.class.name)}/#{item.id}"
+        separator = "&"
+      end
       log "Calling #{config.recommender_host}:#{config.recommender_host}#{path}"
       response = Net::HTTP.get_response(config.recommender_host, path, config.recommender_port)
       body = response.body
