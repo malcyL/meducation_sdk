@@ -1,3 +1,6 @@
+# 1.6.9 / 2014-03-14
+* [BUGFIX] Good resources padding recommendations should be safe for email.
+
 # 1.6.5 / 2014-03-14
 * [FEATURE] Allow recommendations of multiple items
 

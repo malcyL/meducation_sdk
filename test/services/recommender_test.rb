@@ -94,6 +94,7 @@ module MeducationSDK
       MediaFile.expects(:where).with({id: [item.id, item2.id]}).returns([item, item2])
       good_resources = mock
       MediaFile.expects(:where).with('rating > 2').returns(@per_result)
+      @per_result.expects(:where).with(safe_for_email: true).returns(@per_result)
       items = Recommender.new(item, limit: limit).recommend
       assert_equal [item, item2, item3], items
     end
@@ -113,7 +114,7 @@ module MeducationSDK
       Net::HTTP.expects(:get_response).raises(StandardError)
       MeducationSDK.config.logger.expects(:error).with("!!Recommender Error!!")
       MeducationSDK.config.logger.expects(:error).with("StandardError")
-      MediaFile.stubs(:where).with('rating > 2').returns(@per_result)
+      MediaFile.expects(:where).with('rating > 2').returns(@per_result)
       Recommender.new(item).recommend
     end
 
@@ -121,7 +122,7 @@ module MeducationSDK
       @per_result.expects(:per).with(5).returns(@per_result)
       @per_result.stubs(to_a: [item3])
       Net::HTTP.expects(:get_response).raises(StandardError)
-      MediaFile.stubs(:where).with('rating > 2').returns(@per_result)
+      MediaFile.expects(:where).with('rating > 2').returns(@per_result)
       items = Recommender.new(item).recommend
       assert_equal [item3], items
     end
@@ -130,7 +131,8 @@ module MeducationSDK
       @per_result.expects(:per).with(5).returns(@per_result)
       @per_result.stubs(to_a: [item3])
       Net::HTTP.expects(:get_response).raises(StandardError)
-      MediaFile.stubs(:where).with('rating > 2').returns(@per_result)
+      MediaFile.expects(:where).with('rating > 2').returns(@per_result)
+      @per_result.expects(:where).with(safe_for_email: true).returns(@per_result)
       items = Recommender.new(item).recommend
       assert_equal [item3], items
     end
