@@ -17,7 +17,7 @@ module MeducationSDK
       recommendations = generate_recommendations
       if recommendations.size < @limit
         log "recommendations.size (#{recommendations.size}) is < limit of #{@limit}"
-        recommendations += MeducationSDK::MediaFile.where('rating > 2').per(@limit - recommendations.size).order(:random).to_a
+        recommendations += MeducationSDK::MediaFile.where('rating > 2').where(safe_for_email: true).per(@limit - recommendations.size).order(:random).to_a
       else
         log "recommendations.size (#{recommendations.size}) is >= limit of #{@limit}"
       end
@@ -26,7 +26,7 @@ module MeducationSDK
       log_error("!!Recommender Error!!")
       log_error(e.message)
       log_error(e.backtrace)
-      MeducationSDK::MediaFile.where('rating > 2').per(@limit).order(:random).to_a
+      MeducationSDK::MediaFile.where('rating > 2').where(safe_for_email: true).per(@limit).order(:random).to_a
     end
 
     def generate_recommendations
