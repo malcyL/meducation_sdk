@@ -5,6 +5,10 @@ module MeducationSDK
     def created_by
       @created_by ||= User.find(created_by_id)
     end
+    
+    def self.reimport_metadata(id)
+      new Loquor.post("#{path}/#{id}/reimport_metadata", {})
+    end
 
   end
 

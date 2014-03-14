@@ -1,3 +1,6 @@
+# 1.6.10 / 2014-03-14
+* [FEATURE] Supporting a metadata refresh for external resources
+
 # 1.6.9 / 2014-03-14
 * [BUGFIX] Good resources padding recommendations should be safe for email.
 
