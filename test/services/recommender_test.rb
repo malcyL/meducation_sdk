@@ -37,6 +37,12 @@ module MeducationSDK
       Recommender.recommend(nil)
     end
 
+    def test_should_use_items_not_board_items
+      Net::HTTP.expects(:get_response).with("recommender.meducation.net", "/combined?MediaFile/#{item.id}", 4567).returns(empty_response)
+      item = BoardItem.new(item_type: "MediaFile", item_id: 10)
+      Recommender.new(item).recommend
+    end
+
     def test_should_call_the_recommender_service_for_individual_recommendation
       @per_result.expects(:per).with(5).returns(@per_result)
       Net::HTTP.expects(:get_response).with("recommender.meducation.net", "/combined?MediaFile/#{item.id}", 4567).returns(empty_response)

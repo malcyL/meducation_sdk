@@ -57,7 +57,12 @@ module MeducationSDK
       path = "/combined"
       separator = "?"
       @items.each do |item|
-        path << separator << "#{spi_type_for(item.class.name)}/#{item.id}"
+        item_type, item_id = if item.is_a?(BoardItem)
+          [item.item_type, item.item_id]
+        else
+          [item.class.name, item.id]
+        end
+        path << separator << "#{spi_type_for(item_type)}/#{item_id}"
         separator = "&"
       end
       log "Calling #{config.recommender_host}:#{config.recommender_host}#{path}"

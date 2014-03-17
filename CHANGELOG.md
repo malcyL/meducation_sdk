@@ -1,3 +1,6 @@
+# 1.6.11 / 2014-03-14
+* [BUGFIX] Allow recommendations for board items
+
 # 1.6.10 / 2014-03-14
 * [FEATURE] Supporting a metadata refresh for external resources
 
