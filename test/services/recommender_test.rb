@@ -45,6 +45,7 @@ module MeducationSDK
 
     def test_should_use_items_not_board_items
       Net::HTTP.expects(:get_response).with("recommender.meducation.net", "/combined?MediaFile/#{item.id}", 4567).returns(empty_response)
+      MediaFile.expects(:where).returns(@per_result)
       item = BoardItem.new(item_type: "MediaFile", item_id: 10)
       Recommender.new(item).recommend
     end
