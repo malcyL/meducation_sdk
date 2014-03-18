@@ -3,7 +3,11 @@ module MeducationSDK
     include Helpers
 
     def self.recommend(items, options = {})
-      new(items, options).recommend
+      if items.is_a?(User)
+        UserRecommender.new(items, options).recommend
+      else
+        new(items, options).recommend
+      end
     end
 
     attr_reader :items
@@ -82,6 +86,22 @@ module MeducationSDK
 
     def config
       MeducationSDK.config
+    end
+
+    class UserRecommender
+      include Helpers
+      def initialize(user, options = {})
+        @user = user
+        @options = options
+        @limit = options[:limit] || 5
+      end
+
+      def recommend
+        results = Loquor.get("items/recommendations_for_user", user_id: @user.id)
+        results.map do |result|
+          sdk_class_for(result[:type]).new(result)
+        end
+      end
     end
   end
 end
