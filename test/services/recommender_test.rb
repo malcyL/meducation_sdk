@@ -32,6 +32,12 @@ module MeducationSDK
       Recommender.recommend(item)
     end
 
+    def test_should_call_user_recommnder_new_with_user
+      user = User.new({})
+      Recommender::UserRecommender.expects(:new).with(user, {}).returns(mock(recommend: nil))
+      Recommender.recommend(user)
+    end
+
     def test_should_proxy_to_recommend
       Recommender.any_instance.expects(:recommend)
       Recommender.recommend(nil)
@@ -152,6 +158,27 @@ module MeducationSDK
       Net::HTTP.expects(:get_response).raises(StandardError)
       items = Recommender.new(item).recommend
       assert_equal [item2], items
+    end
+
+    def test_user_recommender_calls_spi
+      user = User.new({id: 2})
+      recommender = Recommender::UserRecommender.new(user)
+      Loquor.expects(:get).with("items/recommendations_for_user", user_id: user.id).returns([])
+      recommender.recommend
+    end
+
+    def test_user_recommender_calls_return_objects
+      user = User.new({id: 2})
+      response = [{type: "MediaFile", id: 8}, {type: "ExternalResource", id: 22}]
+      recommender = Recommender::UserRecommender.new(user)
+      Loquor.expects(:get).returns(response)
+      results = recommender.recommend
+
+      assert results[0].is_a?(MediaFile)
+      assert_equal 8, results[0].id
+
+      assert results[1].is_a?(ExternalResource)
+      assert_equal 22, results[1].id
     end
   end
 end
