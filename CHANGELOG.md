@@ -1,3 +1,6 @@
+# 1.6.12 / 2014-03-18
+* [FEATURE] Add user recommendations
+
 # 1.6.11 / 2014-03-14
 * [BUGFIX] Allow recommendations for board items
 
