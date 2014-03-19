@@ -97,9 +97,9 @@ module MeducationSDK
       end
 
       def recommend
-        results = Loquor.get("items/recommendations_for_user", user_id: @user.id)
+        results = Loquor.get("/items/recommendations_for_user?user_id=#{@user.id}", user_id: @user.id)
         results.map do |result|
-          sdk_class_for(result[:type]).new(result)
+          sdk_class_for(result["type"]).new(result)
         end
       end
     end
