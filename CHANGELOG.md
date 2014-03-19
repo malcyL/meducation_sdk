@@ -1,3 +1,6 @@
+# 1.6.13 / 2014-03-19
+* [BUGFIX] Fixes for user recommendations
+
 # 1.6.12 / 2014-03-18
 * [FEATURE] Add user recommendations
 

@@ -164,13 +164,13 @@ module MeducationSDK
     def test_user_recommender_calls_spi
       user = User.new({id: 2})
       recommender = Recommender::UserRecommender.new(user)
-      Loquor.expects(:get).with("items/recommendations_for_user", user_id: user.id).returns([])
+      Loquor.expects(:get).with("/items/recommendations_for_user?user_id=2", user_id: user.id).returns([])
       recommender.recommend
     end
 
     def test_user_recommender_calls_return_objects
       user = User.new({id: 2})
-      response = [{type: "MediaFile", id: 8}, {type: "ExternalResource", id: 22}]
+      response = [{'type' => "MediaFile", id: 8}, {'type' => "ExternalResource", id: 22}]
       recommender = Recommender::UserRecommender.new(user)
       Loquor.expects(:get).returns(response)
       results = recommender.recommend
