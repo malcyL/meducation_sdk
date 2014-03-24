@@ -1,5 +1,8 @@
+# 1.6.16 / 2014-03-24
+* [FEATURE] Add slug to collections
+
 # 1.6.15 / 2014-03-24
-* [BUGFIX] Add collection onto collection topics
+* [FEATURE] Add collection onto collection topics
 
 # 1.6.14 / 2014-03-24
 * [BUGFIX] Fixes users for collection topic
