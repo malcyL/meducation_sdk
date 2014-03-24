@@ -9,7 +9,7 @@ module MeducationSDK
     end
 
     def users
-      @authors ||= User.where(id: authors.map(&:user_id))
+      @users ||= User.where(id: authors.map(&:user_id))
     end
 
     def comments
