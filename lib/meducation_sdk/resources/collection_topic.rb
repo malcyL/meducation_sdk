@@ -4,6 +4,10 @@ module MeducationSDK
 
     self.path = "/collection_topics"
 
+    def collection 
+      @collection ||= Collection.find(collection_id)
+    end
+
     def authors
       @authors ||= Author.where(id: author_ids)
     end
