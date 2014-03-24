@@ -17,6 +17,7 @@ module MeducationSDK
       id: 7,
       title: 'This is a mock collection',
       description: 'This is a sample description',
+      slug: "mock_collection",
       market_description: 'This is a sample market description',
       section_ids: [2,3,4,5,6],
       topic_ids: [1,2,3,4],
