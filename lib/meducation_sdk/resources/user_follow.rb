@@ -1,23 +1,23 @@
 module MeducationSDK
-  class Friendship < Resource
-    self.path = "/friendships"
+  class UserFollow < Resource
+    self.path = "/user_follows"
 
     def user
       @user ||= User.find(user_id)
     end
 
-    def friend
-      @friend ||= User.find(friend_id)
+    def followee
+      @followee ||= User.find(followee_id)
     end
   end
 
-  class FriendshipMock < Friendship
+  class UserFollowMock < UserFollow
     extend Loquor::ResourceMock
 
     self.attributes = {
       id: 1,
       user_id: 8,
-      friend_id: 9,
+      followee_id: 9,
       accept_code: "asdsad21312e"
     }
   end

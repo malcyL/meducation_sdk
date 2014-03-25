@@ -1,3 +1,6 @@
+# 1.7.0 / 2014-03-25
+* [FEATURE] Sub out Friendship for UserFollow
+
 # 1.6.16 / 2014-03-24
 * [FEATURE] Add slug to collections
 

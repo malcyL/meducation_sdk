@@ -44,7 +44,6 @@ RESOURCES = %w{
   dashboard_item
   ecommerce_subscription
   external_resource
-  friendship
   group
   group_discussion
   group_discussion_post
@@ -63,6 +62,7 @@ RESOURCES = %w{
   syllabus_item
   user
   user_email_data
+  user_follow
   user_settings
   view
   vote
