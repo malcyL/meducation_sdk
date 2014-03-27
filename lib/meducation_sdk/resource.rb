@@ -61,6 +61,7 @@ RESOURCES = %w{
   partner
   syllabus_item
   user
+  user_connection
   user_email_data
   user_follow
   user_settings

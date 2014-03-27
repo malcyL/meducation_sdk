@@ -2,7 +2,7 @@ require_relative '../test_helper'
 require_relative '../resource_test'
 
 module MeducationSDK
-  class UserFollowTest < ResourceTest
-    test_resource(UserFollow, '/user_follows')
+  class UserConnectionTest < ResourceTest
+    test_resource(UserConnection, '/user_connections')
   end
 end

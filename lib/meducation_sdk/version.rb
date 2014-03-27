@@ -1,3 +1,3 @@
 module MeducationSDK
-  VERSION = "1.6.16"
+  VERSION = "2.0.0"
 end
