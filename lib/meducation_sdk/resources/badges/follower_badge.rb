@@ -1,14 +1,14 @@
 module MeducationSDK
   module Badges
-    class BefrienderBadge < Badge
-      self.path = "/badges/befriender_badges"
+    class FollowerBadge < Badge
+      self.path = "/badges/follower_badges"
 
       def name
-        'Befriender'
+        'Follower'
       end
 
       def description
-       'Unlocked by making ten friends.'
+       'Unlocked by following 10 people'
       end
 
       def metal
@@ -16,9 +16,10 @@ module MeducationSDK
       end
     end
 
-    class BefrienderBadgeMock < BefrienderBadge
+    class FollowerBadgeMock < FollowerBadge
       extend Loquor::ResourceMock
       self.attributes = { id: 1, user_id: 1 }
     end
   end
 end
+

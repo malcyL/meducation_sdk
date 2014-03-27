@@ -19,13 +19,13 @@ end
 RESOURCES = %w{
   author
   badges/answerer_badge
-  badges/befriender_badge
   badges/citizen_badge
   badges/commentator_badge
   badges/community_member_badge
   badges/contributor_badge
   badges/eminent_author_badge
   badges/enlightener_badge
+  badges/follower_badge
   badges/inquisitive_mind_badge
   badges/photogenic_badge
   badges/questioner_badge
