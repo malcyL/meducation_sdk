@@ -15,6 +15,7 @@ module MeducationSDK
     end
 
     def spi_type_for(sdk_type)
+      sdk_type = sdk_type.gsub(/Mock$/, "")
       if SDK_TO_SPI_MAPPINGS.has_key?(sdk_type)
         SDK_TO_SPI_MAPPINGS[sdk_type]
       else

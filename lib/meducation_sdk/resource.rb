@@ -19,13 +19,13 @@ end
 RESOURCES = %w{
   author
   badges/answerer_badge
-  badges/befriender_badge
   badges/citizen_badge
   badges/commentator_badge
   badges/community_member_badge
   badges/contributor_badge
   badges/eminent_author_badge
   badges/enlightener_badge
+  badges/follower_badge
   badges/inquisitive_mind_badge
   badges/photogenic_badge
   badges/questioner_badge
@@ -44,7 +44,6 @@ RESOURCES = %w{
   dashboard_item
   ecommerce_subscription
   external_resource
-  friendship
   group
   group_discussion
   group_discussion_post
@@ -62,7 +61,9 @@ RESOURCES = %w{
   partner
   syllabus_item
   user
+  user_connection
   user_email_data
+  user_follow
   user_settings
   view
   vote
