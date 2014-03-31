@@ -1,3 +1,6 @@
+# 2.0.1 / 2014-03-31
+* [FEATURE] Added Contribution
+
 # 2.0.0 / 2014-03-25
 * [FEATURE] Sub in UserFollow and UserConnection for Friendship
 * [FEATURE] Sub in FollowerBadge for BefrienderBadge

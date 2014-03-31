@@ -41,6 +41,7 @@ RESOURCES = %w{
   comment
   community
   community_membership
+  contribution
   dashboard_item
   ecommerce_subscription
   external_resource
