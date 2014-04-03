@@ -17,6 +17,19 @@ module MeducationSDK
       media_file.user
     end
 
+    def test_indexable_content_calls_sdk
+      media_file = MediaFile.new(id: 5)
+      content = "Foobar123"
+      MeducationSDK::IndexableContent.expects(:where).with(item_id: media_file.id, item_type: "MediaFile").returns([IndexableContent.new(content: content)])
+      assert_equal content, media_file.indexable_content
+    end
+
+    def test_indexable_content_deals_with_no_result
+      media_file = MediaFile.new(id: 5)
+      MeducationSDK::IndexableContent.expects(:where).with(item_id: media_file.id, item_type: "MediaFile").returns([])
+      assert_equal "", media_file.indexable_content
+    end
+
     def test_mdia_file_responds_to_rating
       media_file = MediaFile.new(rating: 5)
       assert media_file.respond_to?(:rating)

@@ -50,6 +50,7 @@ RESOURCES = %w{
   group_discussion_post
   group_invite
   group_membership
+  indexable_content
   knowledge_bank_question
   knowledge_bank_answer
   media_file
