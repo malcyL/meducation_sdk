@@ -10,6 +10,13 @@ module MeducationSDK
       @comments ||= Comment.where(item_id: id, item_type: "MediaFile")
     end
 
+    def indexable_content
+      @indexable_content ||= begin
+        object = IndexableContent.where(item_id: id, item_type: "MediaFile").first
+        object ? object.content : ''
+     end
+    end
+
     module State
       def self.uploaded; 1 end
       def self.processing; 2 end

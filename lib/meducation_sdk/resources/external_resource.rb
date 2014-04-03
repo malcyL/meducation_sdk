@@ -5,7 +5,14 @@ module MeducationSDK
     def created_by
       @created_by ||= User.find(created_by_id)
     end
-    
+
+    def indexable_content
+      @indexable_content ||= begin
+        object = IndexableContent.where(item_id: id, item_type: "ExternalResource").first
+        object ? object.content : ''
+     end
+    end
+
     def self.reimport_metadata(id)
       new Loquor.post("#{path}/#{id}/reimport_metadata", {})
     end
