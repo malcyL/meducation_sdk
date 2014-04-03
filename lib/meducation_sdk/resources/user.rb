@@ -12,6 +12,10 @@ module MeducationSDK
       Community.where(id: community_membership_ids)
     end
 
+    def email_preferences
+      UserEmailPreferences.where(user_id: id).first
+    end
+
     def settings
       UserSettings.where(user_id: id).first
     end
