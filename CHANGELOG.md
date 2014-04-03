@@ -1,3 +1,6 @@
+# 2.0.2 / 2014-04-03
+* [FEATURE] Added User Email Preferences
+
 # 2.0.1 / 2014-03-31
 * [FEATURE] Added Contribution
 
