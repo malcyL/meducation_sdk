@@ -16,7 +16,6 @@ module MeducationSDK
       MeducationSDK::Board.expects(:find).with(2)
       follow.board
     end
-
   end
 end
 
