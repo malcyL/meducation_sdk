@@ -59,6 +59,7 @@ RESOURCES = %w{
   message_thread
   message_thread_contributor
   mnemonic
+  news_feed_item
   notification
   partner
   syllabus_item

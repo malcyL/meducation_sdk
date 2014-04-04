@@ -1,3 +1,6 @@
+# 2.0.4 / 2014-04-04
+* [FEATURE] Add news feed items
+
 # 2.0.3 / 2014-04-03
 * [FEATURE] Add indexable content to external resources and media files
 
