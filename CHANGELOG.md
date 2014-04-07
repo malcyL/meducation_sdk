@@ -1,3 +1,6 @@
+# 2.0.5 / 2014-04-07
+* [FEATURE] Add sent emails
+
 # 2.0.4 / 2014-04-04
 * [FEATURE] Add news feed items
 
