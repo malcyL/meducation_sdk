@@ -8,6 +8,7 @@ require "meducation_sdk/mocker"
 require "meducation_sdk/helpers"
 require "meducation_sdk/services/recommender"
 require "meducation_sdk/resource"
+require "meducation_sdk/email_shortcodes"
 
 module MeducationSDK
   def self.config
