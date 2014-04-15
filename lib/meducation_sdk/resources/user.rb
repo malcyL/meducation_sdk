@@ -35,7 +35,8 @@ module MeducationSDK
       url_code: "asd1234567",
       is_site_admin: false,
       views_in_last_30_days: 30,
-      views_in_last_60_days: 60
+      views_in_last_60_days: 60,
+      viewable_collections: []
     }
   end
 end
