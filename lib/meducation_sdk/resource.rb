@@ -65,6 +65,7 @@ RESOURCES = %w{
   syllabus_item
   user
   user_connection
+  user_discount_code
   user_email_data
   user_email_preferences
   user_follow

@@ -1,3 +1,6 @@
+# 2.1.1 / 2014-04-15
+* [FEATURE] Added User Discount Codes
+
 # 2.1.0 / 2014-04-12
 * [FEATURE] Change activesupport dependency to allow for Rails 4
 
