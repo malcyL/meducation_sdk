@@ -43,6 +43,7 @@ RESOURCES = %w{
   community_membership
   contribution
   dashboard_item
+  ecommerce_product
   ecommerce_subscription
   external_resource
   group
