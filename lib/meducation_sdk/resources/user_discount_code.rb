@@ -7,7 +7,7 @@ module MeducationSDK
     end
   end
 
-  class UserDiscountCodeMock < Board
+  class UserDiscountCodeMock < UserDiscountCode
     extend Loquor::ResourceMock
 
     self.attributes = {
