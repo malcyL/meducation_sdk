@@ -24,6 +24,8 @@ module MeducationSDK
     "m_nwusr"   => "New User",
     "m_nv96hr"  => "Not Visited For 96hrs",
     "m_pswdr"   => "Password Reset",
-    "m_nwvt"    => "New Vote"
+    "m_nwvt"    => "New Vote",
+    "m_mscdis"  => "Medical Student Collection Discount",
+    "m_fpdis"   => "Funky Professor Discount"
   }
 end

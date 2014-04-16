@@ -1,3 +1,6 @@
+# 2.1.2 / 2014-04-16
+* [FEATURE] Added New Email Short Codes
+
 # 2.1.1 / 2014-04-15
 * [FEATURE] Added User Discount Codes
 
