@@ -1,3 +1,6 @@
+# 2.1.3 / 2014-04-16
+* [FEATURE] Added Ecommerce Product
+
 # 2.1.2 / 2014-04-16
 * [FEATURE] Added New Email Short Codes
 
