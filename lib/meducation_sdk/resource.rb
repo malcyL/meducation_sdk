@@ -46,6 +46,7 @@ RESOURCES = %w{
   ecommerce_product
   ecommerce_subscription
   external_resource
+  exam_room_practice_exam
   group
   group_discussion
   group_discussion_post

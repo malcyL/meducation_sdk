@@ -1,3 +1,6 @@
+# 2.1.4 / 2014-04-28
+* [FEATURE] Added Exam Room Practice Exam
+
 # 2.1.3 / 2014-04-16
 * [FEATURE] Added Ecommerce Product
 
