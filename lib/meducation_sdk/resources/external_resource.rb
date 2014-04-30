@@ -29,9 +29,7 @@ module MeducationSDK
       url: 'http://footube.example.com/foo/bar',
       title: 'Foo Bar Baz',
       description: 'The Foo Bar Baz mock external resource is a great FooTube video.',
-      rating: 10,
-      views_in_last_30_days: 30,
-      views_in_last_60_days: 60
+      rating: 10
     }
 
   end

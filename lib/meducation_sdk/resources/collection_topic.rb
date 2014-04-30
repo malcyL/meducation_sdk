@@ -31,8 +31,6 @@ module MeducationSDK
       collection_id: 1,
       section_id: 17,
       resource_ids: [3, 4, 5],
-      views_in_last_30_days: 1,
-      views_in_last_60_days: 2,
       rating: 123,
       author_ids: [7,12,54]
     }
