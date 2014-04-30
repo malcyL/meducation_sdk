@@ -1,3 +1,7 @@
+# 2.2.0 / 2014-04-28
+* [FEATURE] Remove last_30_days and last_60_days
+* [FEATURE] Add reputation to users
+
 # 2.1.4 / 2014-04-28
 * [FEATURE] Added Exam Room Practice Exam
 
