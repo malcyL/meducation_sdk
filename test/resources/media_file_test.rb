@@ -30,14 +30,14 @@ module MeducationSDK
       assert_equal "", media_file.indexable_content
     end
 
-    def test_mdia_file_responds_to_rating
-      media_file = MediaFile.new(rating: 5)
-      assert media_file.respond_to?(:rating)
-    end
-
-    def test_mdia_file_responds_to_rating
+    def test_media_file_responds_to_rating
       media_file = MediaFile.new(rating: 5)
       assert media_file.respond_to?('rating')
+    end
+
+    def test_responds_to_mesh
+      media_file = MediaFile.new(rating: 5)
+      assert media_file.respond_to?('item_mesh_headings')
     end
 
     def test_uploaded_state_is_correct

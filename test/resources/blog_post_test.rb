@@ -22,6 +22,12 @@ module MeducationSDK
       MeducationSDK::Comment.expects(:where).with(item_id: blog_post.id, item_type: "BlogPost")
       blog_post.comments
     end
+
+    def test_responds_to_mesh
+      blog_post = BlogPost.new(id: 5)
+      assert blog_post.respond_to?('item_mesh_headings')
+    end
+
   end
 end
 

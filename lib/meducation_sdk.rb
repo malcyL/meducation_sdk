@@ -1,14 +1,14 @@
 require 'active_support/all'
 require 'loquor'
 
-require "meducation_sdk/version"
-require "meducation_sdk/configuration"
-require "meducation_sdk/mocker"
+require 'meducation_sdk/version'
+require 'meducation_sdk/configuration'
+require 'meducation_sdk/mocker'
 
-require "meducation_sdk/helpers"
-require "meducation_sdk/services/recommender"
-require "meducation_sdk/resource"
-require "meducation_sdk/email_shortcodes"
+require 'meducation_sdk/helpers'
+require 'meducation_sdk/services/recommender'
+require 'meducation_sdk/resource'
+require 'meducation_sdk/email_shortcodes'
 
 module MeducationSDK
   def self.config

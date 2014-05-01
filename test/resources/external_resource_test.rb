@@ -30,6 +30,11 @@ module MeducationSDK
       assert er.respond_to?(:rating)
     end
 
+    def test_responds_to_mesh
+      er = ExternalResource.new(rating: 5)
+      assert er.respond_to?('item_mesh_headings')
+    end
+
     def test_can_retrigger_metadata_load
       Loquor.expects(:post).with('/external_resources/12/reimport_metadata', {})
       ExternalResource.reimport_metadata(12)

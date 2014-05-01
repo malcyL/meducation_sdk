@@ -1,3 +1,6 @@
+# 2.2.1 / 2014-05-01
+* [FEATURE] Add item_mesh_headings to media files, external resources, collection topics and blog posts
+
 # 2.2.0 / 2014-04-28
 * [FEATURE] Remove last_30_days and last_60_days
 * [FEATURE] Add reputation to users

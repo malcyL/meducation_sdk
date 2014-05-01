@@ -17,6 +17,7 @@ module MeducationSDK
 end
 
 RESOURCES = %w{
+  item_mesh_heading
   author
   badges/answerer_badge
   badges/citizen_badge

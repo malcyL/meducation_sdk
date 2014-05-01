@@ -43,5 +43,11 @@ module MeducationSDK
       assert_equal users, topic.users
       assert_equal users, topic.instance_variable_get(:@users)
     end
+
+    def test_responds_to_mesh
+      topic = CollectionTopic.new(collection_id: 373)
+      assert topic.respond_to?('item_mesh_headings')
+    end
+
   end
 end
