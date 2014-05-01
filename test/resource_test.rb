@@ -17,12 +17,12 @@ module MeducationSDK
         end
       end
     end
-    define_method "test_helpers_included" do
+    define_method 'test_helpers_included' do
       assert Resource.new({}).respond_to?(:sdk_class_for)
     end
 
     def test_created_at_is_a_datetime
-      resource = Resource.new(created_at: "2014-02-23T23:34:49Z")
+      resource = Resource.new(created_at: '2014-02-23T23:34:49Z')
       assert resource.created_at.is_a?(DateTime)
       assert_equal DateTime.new(2014, 2, 23, 23, 34, 49), resource.created_at
     end

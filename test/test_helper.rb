@@ -1,13 +1,13 @@
-gem "minitest"
-require "minitest/autorun"
-require "minitest/pride"
-require "minitest/mock"
-require "mocha/setup"
+gem 'minitest'
+require 'minitest/autorun'
+require 'minitest/pride'
+require 'minitest/mock'
+require 'mocha/setup'
 
 lib = File.expand_path('../../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require "meducation_sdk"
+require 'meducation_sdk'
 require_relative 'resources/badges/badge_test.rb'
 
 class Minitest::Test
