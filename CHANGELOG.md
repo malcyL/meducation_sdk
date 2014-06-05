@@ -1,3 +1,6 @@
+# 2.2.2 / 2014-06-05
+* [FEATURE] Add purchase and paypal purchase
+
 # 2.2.1 / 2014-05-01
 * [FEATURE] Add item_mesh_headings to media files, external resources, collection topics and blog posts
 
