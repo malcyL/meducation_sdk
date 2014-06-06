@@ -6,6 +6,8 @@ require 'meducation_sdk/configuration'
 require 'meducation_sdk/mocker'
 
 require 'meducation_sdk/helpers'
+require 'meducation_sdk/services/paypal_purchases'
+require 'meducation_sdk/services/purchases'
 require 'meducation_sdk/services/recommender'
 require 'meducation_sdk/resource'
 require 'meducation_sdk/email_shortcodes'
